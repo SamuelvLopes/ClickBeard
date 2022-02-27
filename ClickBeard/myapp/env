@@ -131,3 +131,8 @@
 #--------------------------------------------------------------------
 
 # curlrequest.shareOptions = true
+database.default.hostname=mariadb
+database.default.port=3306
+database.default.database=ClickBeard
+database.default.username=ClickBeard
+database.default.password=example

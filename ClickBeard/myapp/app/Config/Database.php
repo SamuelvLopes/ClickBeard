@@ -32,10 +32,10 @@ class Database extends Config
      */
     public $default = [
         'DSN'      => '',
-        'hostname' => 'localhost',
-        'username' => '',
-        'password' => '',
-        'database' => '',
+        'hostname' => 'mariadb',
+        'username' => 'ClickBeard',
+        'password' => 'example',
+        'database' => 'ClickBeard',
         'DBDriver' => 'MySQLi',
         'DBPrefix' => '',
         'pConnect' => false,

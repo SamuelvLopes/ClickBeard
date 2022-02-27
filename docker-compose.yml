@@ -8,29 +8,24 @@ services:
       - 8080:8080
   mariadb:
     image: docker.io/bitnami/mariadb:10.4
-    ports:
-      - '3306:3306'
     environment:
-      
-      - MARIADB_PASSWORD=exemple
-      - MARIADB_ROOT_PASSWORD=exemple
-      - MARIADB_USER=root_ClickBeard
+      # ALLOW_EMPTY_PASSWORD is recommended only for development.
+      - MARIADB_ROOT_PASSWORD=example
+      - MARIADB_PASSWORD=example
+      - MARIADB_USER=ClickBeard
       - MARIADB_DATABASE=ClickBeard
-
-  
-  codeigniter:
+  ClickBeard:
     image: docker.io/bitnami/codeigniter:4
     ports:
       - '8000:8000'
     environment:
-      - CODEIGNITER_DATABASE_PASSWORD=exemple
+      # ALLOW_EMPTY_PASSWORD is recommended only for development.
       - CODEIGNITER_DATABASE_HOST=mariadb
+      - CODEIGNITER_DATABASE_PASSWORD=example
       - CODEIGNITER_DATABASE_PORT_NUMBER=3306
-      - CODEIGNITER_DATABASE_USER=root_ClickBeard
+      - CODEIGNITER_DATABASE_USER=ClickBeard
       - CODEIGNITER_DATABASE_NAME=ClickBeard
     volumes:
       - './ClickBeard:/app'
     depends_on:
       - mariadb
-
-  

@@ -6,8 +6,8 @@ use CodeIgniter\Model;
 
 class Teste extends Model {
      protected $table      = 'ESPECIALIDADE';
-     protected $primaryKey = 'IDESPECIALIDADE';
-     protected $allowedFields= ['IDESPECIALIDADE','DESCRICAO'];
+     protected $primaryKey = 'ID';
+     protected $allowedFields= ['ID','DESCRICAO'];
      protected $returnType = 'object';
 
 }
