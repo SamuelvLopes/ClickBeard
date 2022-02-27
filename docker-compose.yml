@@ -1,22 +1,29 @@
 version: '2'
 
 services:
+  adminer:
+    image: adminer
+    restart: always
+    ports:
+      - 8080:8080
   mariadb:
     image: docker.io/bitnami/mariadb:10.4
     ports:
       - '3306:3306'
     environment:
       
-      - ALLOW_EMPTY_PASSWORD=yes
+      - MARIADB_PASSWORD=exemple
+      - MARIADB_ROOT_PASSWORD=exemple
       - MARIADB_USER=root_ClickBeard
       - MARIADB_DATABASE=ClickBeard
+
+  
   codeigniter:
     image: docker.io/bitnami/codeigniter:4
     ports:
       - '8000:8000'
     environment:
-      
-      - ALLOW_EMPTY_PASSWORD=yes
+      - CODEIGNITER_DATABASE_PASSWORD=exemple
       - CODEIGNITER_DATABASE_HOST=mariadb
       - CODEIGNITER_DATABASE_PORT_NUMBER=3306
       - CODEIGNITER_DATABASE_USER=root_ClickBeard
@@ -25,3 +32,5 @@ services:
       - './ClickBeard:/app'
     depends_on:
       - mariadb
+
+  

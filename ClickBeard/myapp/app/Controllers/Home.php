@@ -6,6 +6,9 @@ class Home extends BaseController
 {
     public function index()
     {
-        return view('welcome_message');
+       $teste= new \App\Models\Teste();
+       $teste2=$teste->where('IDESPECIALIDADE', 1)->findAll();
+       var_dump($teste2);
+       echo "teste";
     }
 }

@@ -1,0 +1,116 @@
+CRITICAL - 2022-02-27 14:27:25 --> syntax error, unexpected 'echo' (T_ECHO)
+#0 /app/myapp/system/Autoloader/Autoloader.php(241): CodeIgniter\Autoloader\Autoloader->includeFile()
+#1 /app/myapp/system/Autoloader/Autoloader.php(219): CodeIgniter\Autoloader\Autoloader->loadInNamespace()
+#2 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass()
+#3 [internal function]: spl_autoload_call()
+#4 /app/myapp/system/CodeIgniter.php(790): class_exists()
+#5 /app/myapp/system/CodeIgniter.php(399): CodeIgniter\CodeIgniter->startController()
+#6 /app/myapp/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest()
+#7 /app/myapp/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2022-02-27 14:27:28 --> syntax error, unexpected 'echo' (T_ECHO)
+#0 /app/myapp/system/Autoloader/Autoloader.php(241): CodeIgniter\Autoloader\Autoloader->includeFile()
+#1 /app/myapp/system/Autoloader/Autoloader.php(219): CodeIgniter\Autoloader\Autoloader->loadInNamespace()
+#2 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass()
+#3 [internal function]: spl_autoload_call()
+#4 /app/myapp/system/CodeIgniter.php(790): class_exists()
+#5 /app/myapp/system/CodeIgniter.php(399): CodeIgniter\CodeIgniter->startController()
+#6 /app/myapp/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest()
+#7 /app/myapp/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2022-02-27 14:28:34 --> syntax error, unexpected 'echo' (T_ECHO)
+#0 /app/myapp/system/Autoloader/Autoloader.php(241): CodeIgniter\Autoloader\Autoloader->includeFile()
+#1 /app/myapp/system/Autoloader/Autoloader.php(219): CodeIgniter\Autoloader\Autoloader->loadInNamespace()
+#2 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass()
+#3 [internal function]: spl_autoload_call()
+#4 /app/myapp/system/CodeIgniter.php(790): class_exists()
+#5 /app/myapp/system/CodeIgniter.php(399): CodeIgniter\CodeIgniter->startController()
+#6 /app/myapp/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest()
+#7 /app/myapp/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2022-02-27 14:53:54 --> syntax error, unexpected 'echo' (T_ECHO)
+#0 /app/myapp/system/Autoloader/Autoloader.php(241): CodeIgniter\Autoloader\Autoloader->includeFile()
+#1 /app/myapp/system/Autoloader/Autoloader.php(219): CodeIgniter\Autoloader\Autoloader->loadInNamespace()
+#2 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass()
+#3 [internal function]: spl_autoload_call()
+#4 /app/myapp/system/CodeIgniter.php(790): class_exists()
+#5 /app/myapp/system/CodeIgniter.php(399): CodeIgniter\CodeIgniter->startController()
+#6 /app/myapp/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest()
+#7 /app/myapp/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2022-02-27 14:54:03 --> Class 'App\Models\Teste' not found
+#0 /app/myapp/system/CodeIgniter.php(825): App\Controllers\Home->index()
+#1 /app/myapp/system/CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController()
+#2 /app/myapp/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest()
+#3 /app/myapp/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2022-02-27 14:54:12 --> Class 'App\Models\Teste' not found
+#0 /app/myapp/system/CodeIgniter.php(825): App\Controllers\Home->index()
+#1 /app/myapp/system/CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController()
+#2 /app/myapp/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest()
+#3 /app/myapp/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2022-02-27 14:54:25 --> Class 'App\Models\Teste' not found
+#0 /app/myapp/system/CodeIgniter.php(825): App\Controllers\Home->index()
+#1 /app/myapp/system/CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController()
+#2 /app/myapp/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest()
+#3 /app/myapp/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2022-02-27 14:54:28 --> Class 'App\Models\Teste' not found
+#0 /app/myapp/system/CodeIgniter.php(825): App\Controllers\Home->index()
+#1 /app/myapp/system/CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController()
+#2 /app/myapp/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest()
+#3 /app/myapp/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+ERROR - 2022-02-27 14:54:50 --> Error connecting to the database: No such file or directory
+CRITICAL - 2022-02-27 14:54:50 --> Unable to connect to the database.
+Main connection [MySQLi]: No such file or directory
+#0 /app/myapp/system/Database/BaseConnection.php(577): CodeIgniter\Database\BaseConnection->initialize()
+#1 /app/myapp/system/Database/BaseBuilder.php(1455): CodeIgniter\Database\BaseConnection->query()
+#2 /app/myapp/system/Model.php(183): CodeIgniter\Database\BaseBuilder->get()
+#3 /app/myapp/system/BaseModel.php(584): CodeIgniter\Model->doFindAll()
+#4 /app/myapp/app/Controllers/Home.php(10): CodeIgniter\BaseModel->findAll()
+#5 /app/myapp/system/CodeIgniter.php(825): App\Controllers\Home->index()
+#6 /app/myapp/system/CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController()
+#7 /app/myapp/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest()
+#8 /app/myapp/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+ERROR - 2022-02-27 14:54:57 --> Error connecting to the database: No such file or directory
+CRITICAL - 2022-02-27 14:54:57 --> Unable to connect to the database.
+Main connection [MySQLi]: No such file or directory
+#0 /app/myapp/system/Database/BaseConnection.php(577): CodeIgniter\Database\BaseConnection->initialize()
+#1 /app/myapp/system/Database/BaseBuilder.php(1455): CodeIgniter\Database\BaseConnection->query()
+#2 /app/myapp/system/Model.php(183): CodeIgniter\Database\BaseBuilder->get()
+#3 /app/myapp/system/BaseModel.php(584): CodeIgniter\Model->doFindAll()
+#4 /app/myapp/app/Controllers/Home.php(10): CodeIgniter\BaseModel->findAll()
+#5 /app/myapp/system/CodeIgniter.php(825): App\Controllers\Home->index()
+#6 /app/myapp/system/CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController()
+#7 /app/myapp/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest()
+#8 /app/myapp/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+ERROR - 2022-02-27 15:02:32 --> Error connecting to the database: No such file or directory
+CRITICAL - 2022-02-27 15:02:32 --> Unable to connect to the database.
+Main connection [MySQLi]: No such file or directory
+#0 /app/myapp/system/Database/BaseConnection.php(577): CodeIgniter\Database\BaseConnection->initialize()
+#1 /app/myapp/system/Database/BaseBuilder.php(1455): CodeIgniter\Database\BaseConnection->query()
+#2 /app/myapp/system/Model.php(183): CodeIgniter\Database\BaseBuilder->get()
+#3 /app/myapp/system/BaseModel.php(584): CodeIgniter\Model->doFindAll()
+#4 /app/myapp/app/Controllers/Home.php(10): CodeIgniter\BaseModel->findAll()
+#5 /app/myapp/system/CodeIgniter.php(825): App\Controllers\Home->index()
+#6 /app/myapp/system/CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController()
+#7 /app/myapp/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest()
+#8 /app/myapp/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+ERROR - 2022-02-27 15:03:20 --> Error connecting to the database: No such file or directory
+CRITICAL - 2022-02-27 15:03:20 --> Unable to connect to the database.
+Main connection [MySQLi]: No such file or directory
+#0 /app/myapp/system/Database/BaseConnection.php(577): CodeIgniter\Database\BaseConnection->initialize()
+#1 /app/myapp/system/Database/BaseBuilder.php(1455): CodeIgniter\Database\BaseConnection->query()
+#2 /app/myapp/system/Model.php(183): CodeIgniter\Database\BaseBuilder->get()
+#3 /app/myapp/system/BaseModel.php(584): CodeIgniter\Model->doFindAll()
+#4 /app/myapp/app/Controllers/Home.php(10): CodeIgniter\BaseModel->findAll()
+#5 /app/myapp/system/CodeIgniter.php(825): App\Controllers\Home->index()
+#6 /app/myapp/system/CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController()
+#7 /app/myapp/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest()
+#8 /app/myapp/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
