@@ -32,6 +32,6 @@ class Upload
             
             move_uploaded_file($arquivo['Foto']['tmp_name'],$uploadfile );
 
-            return $name;
+            return "upload/".$name;
 		}
 }

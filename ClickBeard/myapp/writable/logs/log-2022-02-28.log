@@ -19,3 +19,31 @@ CRITICAL - 2022-02-28 00:01:41 --> Call to undefined function App\Libraries\sha(
 #3 /app/myapp/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest()
 #4 /app/myapp/public/index.php(37): CodeIgniter\CodeIgniter->run()
 #5 {main}
+ERROR - 2022-02-28 00:40:13 --> Column 'NOME' cannot be null
+ERROR - 2022-02-28 00:40:17 --> Column 'NOME' cannot be null
+ERROR - 2022-02-28 00:40:22 --> Column 'NOME' cannot be null
+ERROR - 2022-02-28 00:41:25 --> Column 'NOME' cannot be null
+ERROR - 2022-02-28 00:41:29 --> Column 'NOME' cannot be null
+ERROR - 2022-02-28 00:41:33 --> Column 'NOME' cannot be null
+ERROR - 2022-02-28 00:41:39 --> Column 'NOME' cannot be null
+ERROR - 2022-02-28 00:41:54 --> Column 'NOME' cannot be null
+ERROR - 2022-02-28 00:42:02 --> Column 'NOME' cannot be null
+ERROR - 2022-02-28 00:42:09 --> Column 'NOME' cannot be null
+CRITICAL - 2022-02-28 00:54:33 --> Cannot use object of type app\Models\Usuario as array
+#0 /app/myapp/system/CodeIgniter.php(825): App\Controllers\Colaboradores->index()
+#1 /app/myapp/system/CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController()
+#2 /app/myapp/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest()
+#3 /app/myapp/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2022-02-28 00:56:34 --> Cannot use object of type app\Models\Usuario as array
+#0 /app/myapp/system/CodeIgniter.php(825): App\Controllers\Colaboradores->index()
+#1 /app/myapp/system/CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController()
+#2 /app/myapp/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest()
+#3 /app/myapp/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2022-02-28 00:56:39 --> Cannot use object of type app\Models\Usuario as array
+#0 /app/myapp/system/CodeIgniter.php(825): App\Controllers\Colaboradores->index()
+#1 /app/myapp/system/CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController()
+#2 /app/myapp/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest()
+#3 /app/myapp/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}

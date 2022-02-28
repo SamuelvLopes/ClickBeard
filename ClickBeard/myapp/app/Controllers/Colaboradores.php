@@ -10,17 +10,20 @@ class Colaboradores extends BaseController
     public $template;
     public $upload;
     public $TableEspecialidade;
+    public $TableUsuario;
 
     function __construct() 
     {
         $this->template=new Template();
         $this->upload=new Upload();
 		$this->TableEspecialidade=new \App\Models\Especialidade();
+        $this->TableUsuario=new \App\Models\Usuario();
 	}
     public function index()
     {
 
-        
+        $users=$this->TableUsuario->where("TYPE",2)->findAll();
+        var_dump($users);exit();
         $data=["d"];
         $this->template->show("administrador/colaboradores",  $data);
         
@@ -37,7 +40,7 @@ class Colaboradores extends BaseController
     }
     public function cadastro()
     {
-        var_dump($_POST);
+    
        $arquivo=$this->upload->salvar($_FILES);
        
        $password=password_hash("PADRAO", PASSWORD_DEFAULT);
@@ -52,6 +55,7 @@ class Colaboradores extends BaseController
         "CONTRATACAO"=>$_POST['DataContratacao']
 
        ];
-    
+       $this->TableUsuario->insert($data);
+       $this->index();
     }
 }
