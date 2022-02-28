@@ -138,7 +138,9 @@ Cadastrar Especialidade
             </button>
             <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">';
             foreach($user->especialidade as $especialidade){
+            
             echo'<li><a class="dropdown-item" href="#">'.$especialidade.'</a></li>';
+
             }
             echo'</ul>
             </div>
