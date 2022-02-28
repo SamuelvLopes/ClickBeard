@@ -1,0 +1,21 @@
+CRITICAL - 2022-02-28 00:01:27 --> Call to undefined function App\Libraries\sha256()
+#0 /app/myapp/app/Controllers/Colaboradores.php(41): App\Libraries\Upload->salvar()
+#1 /app/myapp/system/CodeIgniter.php(825): App\Controllers\Colaboradores->cadastro()
+#2 /app/myapp/system/CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController()
+#3 /app/myapp/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest()
+#4 /app/myapp/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-02-28 00:01:36 --> Call to undefined function App\Libraries\sha()
+#0 /app/myapp/app/Controllers/Colaboradores.php(41): App\Libraries\Upload->salvar()
+#1 /app/myapp/system/CodeIgniter.php(825): App\Controllers\Colaboradores->cadastro()
+#2 /app/myapp/system/CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController()
+#3 /app/myapp/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest()
+#4 /app/myapp/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-02-28 00:01:41 --> Call to undefined function App\Libraries\sha()
+#0 /app/myapp/app/Controllers/Colaboradores.php(41): App\Libraries\Upload->salvar()
+#1 /app/myapp/system/CodeIgniter.php(825): App\Controllers\Colaboradores->cadastro()
+#2 /app/myapp/system/CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController()
+#3 /app/myapp/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest()
+#4 /app/myapp/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}

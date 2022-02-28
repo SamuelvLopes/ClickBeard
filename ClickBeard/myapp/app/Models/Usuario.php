@@ -8,7 +8,7 @@ class Usuario extends Model
 {
      protected $table      = 'USUARIO';
      protected $primaryKey = 'IDUSUARIO';
-     protected $allowedFields= ['IDUSUARIO','TYPE',"NOME","NASCIMENTO","PASSWORD","EMAIL"];
+     protected $allowedFields= ['IDUSUARIO','TYPE',"NOME","NASCIMENTO","PASSWORD","EMAIL","FOTO","CONTRATACAO"];
      protected $returnType = 'object';
 
 }

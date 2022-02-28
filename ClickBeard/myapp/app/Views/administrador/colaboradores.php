@@ -47,26 +47,26 @@ Cadastrar Especialidade
         </button>
       </div>
       <div class="modal-body">
-      <form method="post" action="colaboradores/cadastro" enctype="multipart/form-data">  
+      <form method="POST" action="colaboradores/cadastro" enctype="multipart/form-data">  
       <div class="input-group input-group-outline mb-4">
             <label class="form-label">Nome</label>
-            <input type="text" class="form-control" required>
+            <input type="text" name="Nome" class="form-control" required>
         </div>
         <div class="input-group input-group-static my-3">
             <label>Data de nascimento</label>
-            <input type="date" class="form-control"required>
+            <input type="date" name="DataNascimento" class="form-control"required>
         </div>
         <div class="input-group input-group-outline mb-4">
             <label class="form-label">Email</label>
-            <input type="email" class="form-control" required>
+            <input type="email" name="Email" class="form-control" required>
         </div>
         <div class="input-group input-group-static my-3">
             <label>Data de Contratação</label>
-            <input type="date" class="form-control" required>
+            <input type="date" name="DataContratacao" class="form-control" required>
         </div>
         <div class="input-group input-group-outline mb-4">
         <p>Foto</p>
-            <input type="file" title="foto" class="form-control" required>
+            <input type="file" name="Foto" class="form-control" required>
         </div>
         <button type="submit"  class="btn bg-gradient-success">Adicionar colaborador</button>
         </form>
