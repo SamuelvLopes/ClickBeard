@@ -47,3 +47,203 @@ CRITICAL - 2022-02-28 00:56:39 --> Cannot use object of type app\Models\Usuario 
 #2 /app/myapp/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest()
 #3 /app/myapp/public/index.php(37): CodeIgniter\CodeIgniter->run()
 #4 {main}
+CRITICAL - 2022-02-28 12:08:46 --> Call to undefined function App\Controllers\RetornaIdEspecialidade()
+#0 /app/myapp/system/CodeIgniter.php(825): App\Controllers\Colaboradores->cadastro()
+#1 /app/myapp/system/CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController()
+#2 /app/myapp/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest()
+#3 /app/myapp/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2022-02-28 12:19:25 --> syntax error, unexpected ']', expecting ';' or ','
+#0 /app/myapp/system/Router/Router.php(175): CodeIgniter\Router\Router->autoRoute()
+#1 /app/myapp/system/CodeIgniter.php(719): CodeIgniter\Router\Router->handle()
+#2 /app/myapp/system/CodeIgniter.php(361): CodeIgniter\CodeIgniter->tryToRouteIt()
+#3 /app/myapp/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest()
+#4 /app/myapp/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-02-28 12:20:37 --> count(): Parameter must be an array or an object that implements Countable
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /app/myapp/app/Controllers/Colaboradores.php(78): count()
+#2 /app/myapp/system/CodeIgniter.php(825): App\Controllers\Colaboradores->cadastro()
+#3 /app/myapp/system/CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController()
+#4 /app/myapp/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest()
+#5 /app/myapp/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2022-02-28 12:23:52 --> Cannot use object of type stdClass as array
+#0 /app/myapp/app/Controllers/Colaboradores.php(80): App\Controllers\Colaboradores->RetornaIdEspecialidade()
+#1 /app/myapp/system/CodeIgniter.php(825): App\Controllers\Colaboradores->cadastro()
+#2 /app/myapp/system/CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController()
+#3 /app/myapp/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest()
+#4 /app/myapp/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-02-28 12:24:19 --> Cannot use object of type stdClass as array
+#0 /app/myapp/app/Controllers/Colaboradores.php(80): App\Controllers\Colaboradores->RetornaIdEspecialidade()
+#1 /app/myapp/system/CodeIgniter.php(825): App\Controllers\Colaboradores->cadastro()
+#2 /app/myapp/system/CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController()
+#3 /app/myapp/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest()
+#4 /app/myapp/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-02-28 12:24:46 --> Cannot use object of type stdClass as array
+#0 /app/myapp/app/Controllers/Colaboradores.php(80): App\Controllers\Colaboradores->RetornaIdEspecialidade()
+#1 /app/myapp/system/CodeIgniter.php(825): App\Controllers\Colaboradores->cadastro()
+#2 /app/myapp/system/CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController()
+#3 /app/myapp/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest()
+#4 /app/myapp/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-02-28 12:27:55 --> Cannot use object of type stdClass as array
+#0 /app/myapp/app/Controllers/Colaboradores.php(80): App\Controllers\Colaboradores->RetornaIdEspecialidade()
+#1 /app/myapp/system/CodeIgniter.php(825): App\Controllers\Colaboradores->cadastro()
+#2 /app/myapp/system/CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController()
+#3 /app/myapp/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest()
+#4 /app/myapp/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-02-28 12:28:21 --> syntax error, unexpected '}'
+#0 /app/myapp/system/Router/Router.php(175): CodeIgniter\Router\Router->autoRoute()
+#1 /app/myapp/system/CodeIgniter.php(719): CodeIgniter\Router\Router->handle()
+#2 /app/myapp/system/CodeIgniter.php(361): CodeIgniter\CodeIgniter->tryToRouteIt()
+#3 /app/myapp/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest()
+#4 /app/myapp/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+ERROR - 2022-02-28 13:03:40 --> Column 'IDESPECIALIDADE' cannot be null
+ERROR - 2022-02-28 13:04:55 --> Column 'IDUSUARIO' cannot be null
+ERROR - 2022-02-28 13:06:04 --> Column 'IDUSUARIO' cannot be null
+ERROR - 2022-02-28 13:06:32 --> Column 'IDUSUARIO' cannot be null
+CRITICAL - 2022-02-28 14:04:14 --> Cannot use object of type stdClass as array
+#0 /app/myapp/app/Controllers/Colaboradores.php(111): App\Controllers\Colaboradores->index()
+#1 /app/myapp/system/CodeIgniter.php(825): App\Controllers\Colaboradores->cadastro()
+#2 /app/myapp/system/CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController()
+#3 /app/myapp/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest()
+#4 /app/myapp/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-02-28 14:08:45 --> get_object_vars() expects parameter 1 to be object, array given
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /app/myapp/app/Controllers/Colaboradores.php(33): get_object_vars()
+#2 /app/myapp/app/Controllers/Colaboradores.php(112): App\Controllers\Colaboradores->index()
+#3 /app/myapp/system/CodeIgniter.php(825): App\Controllers\Colaboradores->cadastro()
+#4 /app/myapp/system/CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController()
+#5 /app/myapp/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest()
+#6 /app/myapp/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2022-02-28 14:09:44 --> Cannot use object of type stdClass as array
+#0 /app/myapp/app/Controllers/Colaboradores.php(112): App\Controllers\Colaboradores->index()
+#1 /app/myapp/system/CodeIgniter.php(825): App\Controllers\Colaboradores->cadastro()
+#2 /app/myapp/system/CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController()
+#3 /app/myapp/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest()
+#4 /app/myapp/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-02-28 14:10:57 --> Cannot use object of type stdClass as array
+#0 /app/myapp/app/Controllers/Colaboradores.php(113): App\Controllers\Colaboradores->index()
+#1 /app/myapp/system/CodeIgniter.php(825): App\Controllers\Colaboradores->cadastro()
+#2 /app/myapp/system/CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController()
+#3 /app/myapp/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest()
+#4 /app/myapp/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-02-28 14:19:23 --> Cannot use object of type stdClass as array
+#0 /app/myapp/app/Controllers/Colaboradores.php(115): App\Controllers\Colaboradores->index()
+#1 /app/myapp/system/CodeIgniter.php(825): App\Controllers\Colaboradores->cadastro()
+#2 /app/myapp/system/CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController()
+#3 /app/myapp/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest()
+#4 /app/myapp/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-02-28 14:25:46 --> Invalid argument supplied for foreach()
+#0 /app/myapp/app/Views/administrador/colaboradores.php(140): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /app/myapp/system/View/View.php(210): include('/app/myapp/app/...')
+#2 /app/myapp/system/View/View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 /app/myapp/system/Common.php(1089): CodeIgniter\View\View->render()
+#4 /app/myapp/app/Libraries/Template.php(13): view()
+#5 /app/myapp/app/Controllers/Colaboradores.php(40): App\Libraries\Template->show()
+#6 /app/myapp/app/Controllers/Colaboradores.php(115): App\Controllers\Colaboradores->index()
+#7 /app/myapp/system/CodeIgniter.php(825): App\Controllers\Colaboradores->cadastro()
+#8 /app/myapp/system/CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController()
+#9 /app/myapp/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest()
+#10 /app/myapp/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2022-02-28 14:52:11 --> syntax error, unexpected ':'
+#0 /app/myapp/system/Router/Router.php(175): CodeIgniter\Router\Router->autoRoute()
+#1 /app/myapp/system/CodeIgniter.php(719): CodeIgniter\Router\Router->handle()
+#2 /app/myapp/system/CodeIgniter.php(361): CodeIgniter\CodeIgniter->tryToRouteIt()
+#3 /app/myapp/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest()
+#4 /app/myapp/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+ERROR - 2022-02-28 14:53:09 --> Unknown column 'IDESPECIALIDADE' in 'where clause'
+CRITICAL - 2022-02-28 14:53:09 --> Call to a member function getResult() on bool
+#0 /app/myapp/system/BaseModel.php(584): CodeIgniter\Model->doFindAll()
+#1 /app/myapp/app/Controllers/Colaboradores.php(36): CodeIgniter\BaseModel->findAll()
+#2 /app/myapp/app/Controllers/Colaboradores.php(124): App\Controllers\Colaboradores->index()
+#3 /app/myapp/system/CodeIgniter.php(825): App\Controllers\Colaboradores->cadastro()
+#4 /app/myapp/system/CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController()
+#5 /app/myapp/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest()
+#6 /app/myapp/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+ERROR - 2022-02-28 14:53:28 --> Unknown column 'IDESPECIALIDADE' in 'where clause'
+CRITICAL - 2022-02-28 14:53:28 --> Call to a member function getResult() on bool
+#0 /app/myapp/system/BaseModel.php(584): CodeIgniter\Model->doFindAll()
+#1 /app/myapp/app/Controllers/Colaboradores.php(36): CodeIgniter\BaseModel->findAll()
+#2 /app/myapp/app/Controllers/Colaboradores.php(124): App\Controllers\Colaboradores->index()
+#3 /app/myapp/system/CodeIgniter.php(825): App\Controllers\Colaboradores->cadastro()
+#4 /app/myapp/system/CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController()
+#5 /app/myapp/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest()
+#6 /app/myapp/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+ERROR - 2022-02-28 14:54:32 --> Unknown column 'IDESPECIALIDADE' in 'where clause'
+CRITICAL - 2022-02-28 14:54:32 --> Call to a member function getResult() on bool
+#0 /app/myapp/system/BaseModel.php(584): CodeIgniter\Model->doFindAll()
+#1 /app/myapp/app/Controllers/Colaboradores.php(35): CodeIgniter\BaseModel->findAll()
+#2 /app/myapp/app/Controllers/Colaboradores.php(124): App\Controllers\Colaboradores->index()
+#3 /app/myapp/system/CodeIgniter.php(825): App\Controllers\Colaboradores->cadastro()
+#4 /app/myapp/system/CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController()
+#5 /app/myapp/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest()
+#6 /app/myapp/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+ERROR - 2022-02-28 14:55:26 --> Unknown column 'IDESPECIALIDADE' in 'where clause'
+CRITICAL - 2022-02-28 14:55:26 --> Call to a member function getResult() on bool
+#0 /app/myapp/system/BaseModel.php(584): CodeIgniter\Model->doFindAll()
+#1 /app/myapp/app/Controllers/Colaboradores.php(35): CodeIgniter\BaseModel->findAll()
+#2 /app/myapp/app/Controllers/Colaboradores.php(124): App\Controllers\Colaboradores->index()
+#3 /app/myapp/system/CodeIgniter.php(825): App\Controllers\Colaboradores->cadastro()
+#4 /app/myapp/system/CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController()
+#5 /app/myapp/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest()
+#6 /app/myapp/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+ERROR - 2022-02-28 14:58:28 --> Unknown column 'IDESPECIALIDADE' in 'where clause'
+CRITICAL - 2022-02-28 14:58:28 --> Call to a member function getResult() on bool
+#0 /app/myapp/system/BaseModel.php(584): CodeIgniter\Model->doFindAll()
+#1 /app/myapp/app/Controllers/Colaboradores.php(35): CodeIgniter\BaseModel->findAll()
+#2 /app/myapp/app/Controllers/Colaboradores.php(125): App\Controllers\Colaboradores->index()
+#3 /app/myapp/system/CodeIgniter.php(825): App\Controllers\Colaboradores->cadastro()
+#4 /app/myapp/system/CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController()
+#5 /app/myapp/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest()
+#6 /app/myapp/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+ERROR - 2022-02-28 14:58:48 --> Unknown column 'IDESPECIALIDADE' in 'where clause'
+CRITICAL - 2022-02-28 14:58:48 --> Call to a member function getResult() on bool
+#0 /app/myapp/system/BaseModel.php(584): CodeIgniter\Model->doFindAll()
+#1 /app/myapp/app/Controllers/Colaboradores.php(35): CodeIgniter\BaseModel->findAll()
+#2 /app/myapp/app/Controllers/Colaboradores.php(125): App\Controllers\Colaboradores->index()
+#3 /app/myapp/system/CodeIgniter.php(825): App\Controllers\Colaboradores->cadastro()
+#4 /app/myapp/system/CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController()
+#5 /app/myapp/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest()
+#6 /app/myapp/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2022-02-28 15:00:24 --> Invalid argument supplied for foreach()
+#0 /app/myapp/app/Controllers/Colaboradores.php(34): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /app/myapp/app/Controllers/Colaboradores.php(125): App\Controllers\Colaboradores->index()
+#2 /app/myapp/system/CodeIgniter.php(825): App\Controllers\Colaboradores->cadastro()
+#3 /app/myapp/system/CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController()
+#4 /app/myapp/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest()
+#5 /app/myapp/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2022-02-28 15:00:45 --> Invalid argument supplied for foreach()
+#0 /app/myapp/app/Controllers/Colaboradores.php(34): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /app/myapp/app/Controllers/Colaboradores.php(125): App\Controllers\Colaboradores->index()
+#2 /app/myapp/system/CodeIgniter.php(825): App\Controllers\Colaboradores->cadastro()
+#3 /app/myapp/system/CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController()
+#4 /app/myapp/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest()
+#5 /app/myapp/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2022-02-28 15:06:53 --> Cannot use object of type stdClass as array
+#0 /app/myapp/app/Controllers/Colaboradores.php(122): App\Controllers\Colaboradores->index()
+#1 /app/myapp/system/CodeIgniter.php(825): App\Controllers\Colaboradores->cadastro()
+#2 /app/myapp/system/CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController()
+#3 /app/myapp/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest()
+#4 /app/myapp/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}

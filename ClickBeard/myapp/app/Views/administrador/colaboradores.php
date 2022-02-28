@@ -1,4 +1,3 @@
-
 <!-- Button trigger modal -->
 <button type="button" class="btn bg-gradient-secondary" data-bs-toggle="modal" data-bs-target="#CadastrarColaborador">
 Cadastrar Colaborador
@@ -64,11 +63,31 @@ Cadastrar Especialidade
             <label>Data de Contratação</label>
             <input type="date" name="DataContratacao" class="form-control" required>
         </div>
+        <div class="input-group input-group-static my-3">
+            
+            <input style="display:none" type="text" name="especialidades" id="Especialidades_Campo" class="form-control" required>
+        </div>
         <div class="input-group input-group-outline mb-4">
         <p>Foto</p>
             <input type="file" name="Foto" class="form-control" required>
         </div>
+        <div id='DivEspecialidade' class="col-md-12">
+        </div>
+       <div class="row"> 
+    <div class="col-md-6">
+      <div class="input-group input-group-outline my-3">
+        <label class="form-label">Especialidade</label>
+        <input type="text" id='CampoEspecialidade' class="form-control">
+        
+      </div>
+      
+    </div>
+    <div class="col-md-6">
+    <button type="button" onclick="AdicionarEspecialidade()" class="btn bg-gradient-info">Adicionar Especialidade</button>
+      </div>
+</div>
         <button type="submit"  class="btn bg-gradient-success">Adicionar colaborador</button>
+       
         </form>
       </div>
       <div class="modal-footer">
@@ -92,40 +111,46 @@ Cadastrar Especialidade
         </tr>
       </thead>
       <tbody>
+          <?php
+
+          foreach($users as $user){
+          echo'
         <tr>
           <td>
             <div class="d-flex px-2 py-1">
               <div>
-                <img src="https://demos.creative-tim.com/test/material-dashboard-pro/assets/img/team-2.jpg" class="avatar avatar-sm me-3">
+                <img src="'.base_url().'/'.$user->FOTO.'" class="avatar avatar-sm me-3">
               </div>
               <div class="d-flex flex-column justify-content-center">
-                <h6 class="mb-0 text-xs">John Michael</h6>
-                <p class="text-xs text-secondary mb-0">john@creative-tim.com</p>
+                <h6 class="mb-0 text-xs">'.$user->NOME.'</h6>
+                <p class="text-xs text-secondary mb-0">'.$user->EMAIL.'</p>
               </div>
             </div>
           </td>
           <td>
-            <p class="text-xs font-weight-bold mb-0">Manager</p>
-            <p class="text-xs text-secondary mb-0">Organization</p>
+            <p class="text-xs font-weight-bold mb-0">Barber</p>
+            <p class="text-xs text-secondary mb-0">Operacional</p>
           </td>
           <td class="align-middle text-center text-sm">
           <div class="dropdown">
             <button class="btn bg-gradient-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-expanded="false">
-                Secondary
+                Especialidades
             </button>
-            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                <li><a class="dropdown-item" href="#">Action</a></li>
-                <li><a class="dropdown-item" href="#">Another action</a></li>
-                <li><a class="dropdown-item" href="#">Something else here</a></li>
-            </ul>
+            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">';
+            foreach($user->especialidade as $especialidade){
+            echo'<li><a class="dropdown-item" href="#">'.$especialidade.'</a></li>';
+            }
+            echo'</ul>
             </div>
           </td>
           <td class="align-middle text-center">
-            <span class="text-secondary text-xs font-weight-normal">23/04/18</span>
+            <span class="text-secondary text-xs font-weight-normal">'.date("d/m/Y", $user->CONTRATACAO).'</span>
           </td>
           
         </tr>
-
+        ';
+          }
+    ?>
       
         
       </tbody>
