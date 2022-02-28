@@ -1,5 +1,8 @@
- <!--   Core JS Files   -->
- <script src="<?=base_url();?>/assets/js/core/popper.min.js"></script>
+  <!-- AJAX -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+  <script src="<?=base_url();?>/js/jq.js"></script>
+<!--   Core JS Files   -->
+  <script src="<?=base_url();?>/assets/js/core/popper.min.js"></script>
   <script src="<?=base_url();?>/assets/js/core/bootstrap.min.js"></script>
   <script src="<?=base_url();?>/assets/js/plugins/perfect-scrollbar.min.js"></script>
   <script src="<?=base_url();?>/assets/js/plugins/smooth-scrollbar.min.js"></script>

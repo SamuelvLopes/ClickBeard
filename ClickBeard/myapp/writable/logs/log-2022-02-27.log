@@ -217,3 +217,23 @@ CRITICAL - 2022-02-27 18:33:42 --> file_get_contents(arq/controle/liga_desliga.t
 #9 /app/myapp/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest()
 #10 /app/myapp/public/index.php(37): CodeIgniter\CodeIgniter->run()
 #11 {main}
+CRITICAL - 2022-02-27 20:39:47 --> Invalid file: colaboradores.php
+#0 /app/myapp/system/View/View.php(198): CodeIgniter\Exceptions\FrameworkException::forInvalidFile()
+#1 /app/myapp/system/Common.php(1089): CodeIgniter\View\View->render()
+#2 /app/myapp/app/Libraries/Template.php(13): view()
+#3 /app/myapp/app/Controllers/Colaboradores.php(14): App\Libraries\Template->show()
+#4 /app/myapp/system/CodeIgniter.php(825): App\Controllers\Colaboradores->index()
+#5 /app/myapp/system/CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController()
+#6 /app/myapp/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest()
+#7 /app/myapp/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2022-02-27 20:40:06 --> Invalid file: colaboradores.php
+#0 /app/myapp/system/View/View.php(198): CodeIgniter\Exceptions\FrameworkException::forInvalidFile()
+#1 /app/myapp/system/Common.php(1089): CodeIgniter\View\View->render()
+#2 /app/myapp/app/Libraries/Template.php(13): view()
+#3 /app/myapp/app/Controllers/Colaboradores.php(14): App\Libraries\Template->show()
+#4 /app/myapp/system/CodeIgniter.php(825): App\Controllers\Colaboradores->index()
+#5 /app/myapp/system/CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController()
+#6 /app/myapp/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest()
+#7 /app/myapp/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#8 {main}

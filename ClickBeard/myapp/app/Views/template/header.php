@@ -1,19 +1,27 @@
+<?php
+$r=$_SERVER["REQUEST_URI"];
+$l=explode("/",$r);
+
+$link=$l[count($l)-1];
+?>
 <!DOCTYPE html>
 <html lang="pt-br">
 
 <head>
   <meta charset="utf-8" />
+ 
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <link rel="apple-touch-icon" sizes="76x76" href="<?=base_url();?>/assets/img/apple-icon.png">
-  <link rel="icon" type="image/png" href="<?=base_url();?>/assets/img/favicon.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="https://pratics.org/assets/img/favicon.png">
+  <link rel="icon" type="image/png" href="https://pratics.org/assets/img/favicon.png">
   <title>
-    Material Dashboard 2 by Creative Tim
+    ClickBeard
   </title>
   <!--     Fonts and icons     -->
   <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900|Roboto+Slab:400,700" />
   <!-- Nucleo Icons -->
   <link href="<?=base_url();?>/assets/css/nucleo-icons.css" rel="stylesheet" />
   <link href="<?=base_url();?>/assets/css/nucleo-svg.css" rel="stylesheet" />
+ 
   <!-- Font Awesome Icons -->
   <script src="https://kit.fontawesome.com/42d5adcbca.js" crossorigin="anonymous"></script>
   <!-- Material Icons -->
@@ -26,60 +34,45 @@
   <aside class="sidenav navbar navbar-vertical navbar-expand-xs border-0 border-radius-xl my-3 fixed-start ms-3   bg-gradient-dark" id="sidenav-main">
     <div class="sidenav-header">
       <i class="fas fa-times p-3 cursor-pointer text-white opacity-5 position-absolute end-0 top-0 d-none d-xl-none" aria-hidden="true" id="iconSidenav"></i>
-      <a class="navbar-brand m-0" href=" https://demos.creative-tim.com/material-dashboard/pages/dashboard " target="_blank">
-        <img src="<?=base_url();?>/assets/img/logo-ct.png" class="navbar-brand-img h-100" alt="main_logo">
-        <span class="ms-1 font-weight-bold text-white">Material Dashboard 2</span>
+      <a class="navbar-brand m-0" href="<?=base_url();?>">
+        <img src="<?=base_url();?>/ClickBeard.png" class="navbar-brand-img h-100" alt="main_logo">
+        <span class="ms-1 font-weight-bold text-white"></span>
       </a>
     </div>
     <hr class="horizontal light mt-0 mb-2">
     <div class="collapse navbar-collapse  w-auto  max-height-vh-100" id="sidenav-collapse-main">
       <ul class="navbar-nav">
         <li class="nav-item">
-          <a class="nav-link text-white active bg-gradient-primary" href="<?=base_url();?>/pages/dashboard.html">
+          <a class="nav-link text-white <?php if($link==""){echo"active bg-gradient-secondary";}?>" href="<?=base_url();?>">
             <div class="text-white text-center me-2 d-flex align-items-center justify-content-center">
               <i class="material-icons opacity-10">dashboard</i>
             </div>
-            <span class="nav-link-text ms-1">Dashboard</span>
+            <span class="nav-link-text ms-1">Painel Adm</span>
           </a>
         </li>
         <li class="nav-item">
-          <a class="nav-link text-white " href="<?=base_url();?>/pages/tables.html">
+          <a class="nav-link text-white <?php if($link=="agendar"){echo"active bg-gradient-secondary";}?>" href="<?=base_url();?>/agendar">
             <div class="text-white text-center me-2 d-flex align-items-center justify-content-center">
-              <i class="material-icons opacity-10">table_view</i>
+              <i class="material-icons opacity-10">event</i>
             </div>
-            <span class="nav-link-text ms-1">Tables</span>
+            <span class="nav-link-text ms-1">Agendar</span>
           </a>
         </li>
         <li class="nav-item">
-          <a class="nav-link text-white " href="<?=base_url();?>/pages/billing.html">
+          <a class="nav-link text-white <?php if($link=="pagamentos"){echo"active bg-gradient-secondary";}?>" href="<?=base_url();?>/pagamentos">
             <div class="text-white text-center me-2 d-flex align-items-center justify-content-center">
               <i class="material-icons opacity-10">receipt_long</i>
             </div>
-            <span class="nav-link-text ms-1">Billing</span>
+            <span class="nav-link-text ms-1">Pagamentos</span>
           </a>
         </li>
+        
         <li class="nav-item">
-          <a class="nav-link text-white " href="<?=base_url();?>/pages/virtual-reality.html">
+          <a class="nav-link text-white <?php if($link=="colaboradores"){echo"active bg-gradient-secondary";}?>" href="<?=base_url();?>/colaboradores">
             <div class="text-white text-center me-2 d-flex align-items-center justify-content-center">
-              <i class="material-icons opacity-10">view_in_ar</i>
+              <i class="material-icons opacity-10">group</i>
             </div>
-            <span class="nav-link-text ms-1">Virtual Reality</span>
-          </a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link text-white " href="<?=base_url();?>/pages/rtl.html">
-            <div class="text-white text-center me-2 d-flex align-items-center justify-content-center">
-              <i class="material-icons opacity-10">format_textdirection_r_to_l</i>
-            </div>
-            <span class="nav-link-text ms-1">RTL</span>
-          </a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link text-white " href="<?=base_url();?>/pages/notifications.html">
-            <div class="text-white text-center me-2 d-flex align-items-center justify-content-center">
-              <i class="material-icons opacity-10">notifications</i>
-            </div>
-            <span class="nav-link-text ms-1">Notifications</span>
+            <span class="nav-link-text ms-1">Colaboradores</span>
           </a>
         </li>
         <li class="nav-item mt-3">
@@ -88,7 +81,7 @@
         <li class="nav-item">
           <a class="nav-link text-white " href="<?=base_url();?>/pages/profile.html">
             <div class="text-white text-center me-2 d-flex align-items-center justify-content-center">
-              <i class="material-icons opacity-10">person</i>
+              <i class="material-icons opacity-10">perm_identity</i>
             </div>
             <span class="nav-link-text ms-1">Profile</span>
           </a>
@@ -113,7 +106,12 @@
     </div>
     <div class="sidenav-footer position-absolute w-100 bottom-0 ">
       <div class="mx-3">
-        <a class="btn bg-gradient-primary mt-4 w-100" href="https://www.creative-tim.com/product/material-dashboard-pro?ref=sidebarfree" type="button">Upgrade to pro</a>
+        <a class="btn bg-gradient-success mt-4 w-100" href="https://wa.me/5581988275380" type="button">
+          <div class="text-white text-center me-2 d-flex align-items-center justify-content-center">
+              <i class="material-icons opacity-10">whatsapp</i>
+            </div>
+            AGENDE PELO WHATSAPP
+          </a>
       </div>
     </div>
   </aside>
@@ -131,8 +129,8 @@
         <div class="collapse navbar-collapse mt-sm-0 mt-2 me-md-0 me-sm-4" id="navbar">
           <div class="ms-md-auto pe-md-3 d-flex align-items-center">
             <div class="input-group input-group-outline">
-              <label class="form-label">Type here...</label>
-              <input type="text" class="form-control">
+              
+              
             </div>
           </div>
           <ul class="navbar-nav  justify-content-end">
