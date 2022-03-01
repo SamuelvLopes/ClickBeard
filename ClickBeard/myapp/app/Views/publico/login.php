@@ -60,7 +60,7 @@
                 </div>
               </div>
               <div class="card-body">
-                <form role="form" class="text-start">
+                <form role="form" class="text-start" method="POST" action="/login/logar">
                   <div class="input-group input-group-outline my-3">
                     <label class="form-label">Email</label>
                     <input type="email" name="email" class="form-control">
@@ -74,7 +74,7 @@
                     <label class="form-check-label mb-0 ms-2" for="rememberMe">Ficar Logado</label>
                   </div>
                   <div class="text-center">
-                    <button type="button" class="btn bg-gradient-secondary w-100 my-4 mb-2">Sign in</button>
+                    <button type="submit" class="btn bg-gradient-secondary w-100 my-4 mb-2">Entrar</button>
                   </div>
                   <p class="mt-4 text-sm text-center">
                     Não tem uma conta?

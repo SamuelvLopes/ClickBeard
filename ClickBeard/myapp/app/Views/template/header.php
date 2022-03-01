@@ -1,4 +1,6 @@
 <?php
+
+
 $r=$_SERVER["REQUEST_URI"];
 $l=explode("/",$r);
 
@@ -43,7 +45,7 @@ $link=$l[count($l)-1];
     <div class="collapse navbar-collapse  w-auto  max-height-vh-100" id="sidenav-collapse-main">
       <ul class="navbar-nav">
         <li class="nav-item">
-          <a class="nav-link text-white <?php if($link==""){echo"active bg-gradient-secondary";}?>" href="<?=base_url();?>">
+          <a style="<?php if($_SESSION['TYPE']!=1){echo"display:none;";} ?>" class="nav-link text-white <?php if($link==""){echo"active bg-gradient-secondary";}?>" href="<?=base_url();?>">
             <div class="text-white text-center me-2 d-flex align-items-center justify-content-center">
               <i class="material-icons opacity-10">dashboard</i>
             </div>
@@ -68,7 +70,7 @@ $link=$l[count($l)-1];
         </li>
         
         <li class="nav-item">
-          <a class="nav-link text-white <?php if($link=="colaboradores"){echo"active bg-gradient-secondary";}?>" href="<?=base_url();?>/colaboradores">
+          <a style="<?php if($_SESSION['TYPE']!=1){echo"display:none;";} ?>" class="nav-link text-white <?php if($link=="colaboradores"){echo"active bg-gradient-secondary";}?>" href="<?=base_url();?>/colaboradores">
             <div class="text-white text-center me-2 d-flex align-items-center justify-content-center">
               <i class="material-icons opacity-10">group</i>
             </div>
@@ -87,11 +89,11 @@ $link=$l[count($l)-1];
           </a>
         </li>
         <li class="nav-item">
-          <a class="nav-link text-white " href="<?=base_url();?>/pages/sign-in.html">
+          <a class="nav-link text-white " href="<?=base_url();?>/login/deslogar">
             <div class="text-white text-center me-2 d-flex align-items-center justify-content-center">
               <i class="material-icons opacity-10">login</i>
             </div>
-            <span class="nav-link-text ms-1">Sign In</span>
+            <span class="nav-link-text ms-1">Sair</span>
           </a>
         </li>
         <li class="nav-item">

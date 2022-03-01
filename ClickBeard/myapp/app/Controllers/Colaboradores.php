@@ -14,6 +14,13 @@ class Colaboradores extends BaseController
 
     function __construct() 
     {
+        $this->home=new \App\Controllers\Home();
+        $session = \Config\Services::session($config);
+        $session = session();
+        if(!isset($_SESSION['TYPE'])||$_SESSION['TYPE']!=1){
+           $this->home->index();
+            exit();
+        }
         $this->template=new Template();
         $this->upload=new Upload();
 		$this->TableEspecialidade=new \App\Models\Especialidade();
@@ -21,6 +28,8 @@ class Colaboradores extends BaseController
         $this->TableBarbeiroespecialidade=new \App\Models\Barbeiroespecialidade();
         $this->home=new \App\Controllers\Home();
         $this->login=new \App\Controllers\Login();
+        
+
 	}
     public function index()
     {
