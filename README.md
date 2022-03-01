@@ -7,7 +7,4 @@
 ###### 1-administrador
 ###### 2-barbeiro
 ###### 3- usuario comum
-<<<<<<< HEAD
 
-=======
->>>>>>> 8b1dc3797a1bfffd6b8c96f4ecdaa71fb1c51de5
