@@ -43,11 +43,10 @@ class Colaboradores extends BaseController
             $especialidades=$this->TableBarbeiroespecialidade->where("IDUSUARIO",$users[$i]->IDUSUARIO)->findAll();
            
             foreach($especialidades as $especialidade){
+               
                 $item=$this->TableEspecialidade->where("ID",$especialidade->IDESPECIALIDADE)->findAll()[0]->DESCRICAO;
                 array_push($especialidade_list,$item);
                 
-                
-
             }
             $users[$i]->especialidade=$especialidade_list;
             

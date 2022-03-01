@@ -43,7 +43,7 @@ let DescricaoEspecialidade=document.getElementById("DescricaoEspecialidade").val
 document.getElementById("DescricaoEspecialidade").value="";
     $.post('colaboradores/especialidade', {DescricaoEspecialidade:DescricaoEspecialidade}, function (retorno) {
         if (retorno != null) {
-
+            
             console.log(retorno);
 
         } else {
@@ -55,6 +55,61 @@ document.getElementById("DescricaoEspecialidade").value="";
     
     });
 }
+const ProcurandoEspecialidade = setInterval(procurarespecialidade, 1000);
+function escolheespecialidade(id,especialidade) {
+    clearInterval(ProcurandoEspecialidade);
+    document.getElementById("botoes_especialidade").innerHTML="";
+    document.getElementById("form_especialidade").style.display="none";
+    document.getElementById("botoes_especialidade").style.display="none";
+    document.getElementById("div_especialidade").style.display="none";
+    document.getElementById("form_especialidade").value=especialidade;
+    document.getElementById("form_especialidade2").value=id;
+    let select;
+    $.post('/agendar/buscarbarbeiro', {especialidade:especialidade}, function (retorno) {
+        document.getElementById("divbabeiroselect").style.display="block";
+        document.getElementById("babeiroselect").innerHTML=retorno;
+        
+    });
+    
+}
+function procurarespecialidade() {
+  //seria bom não deixar essa função rodando assim por consumir o servidor de forma desnessesaria
+  let especialidade=document.getElementById("form_especialidade").value;
+  if(especialidade!=""){
+      
+    $.post('/agendar/buscarespecialidade', {especialidade:especialidade}, function (retorno) {
+            if (retorno != null) {
+                retorno=retorno.split("|||");
+               
+                let div="";
+                for (var i = 0; i <retorno.length; i++) {
+                    if(retorno[i]!=""){
+                    div=div+'<button type="button" onclick="escolheespecialidade('+retorno[i+1]+','+"'"+retorno[i]+"'"+')" class="btn btn-primary">'+retorno[i]+'</button>';
+                    }
+                    i++;
+                }
+
+                document.getElementById("botoes_especialidade").innerHTML=div;
+
+    
+            } else {
+    
+               
+    
+            }
+        });
+
+  }
+}
+
+function pergunta(){ 
+    if (confirm('Tem certeza que quer realizar esse agendamento?')){ 
+       document.agendamento_form.submit() 
+    } 
+ }
+
+
+
 
 
 
