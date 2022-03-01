@@ -6,15 +6,25 @@ use App\Libraries\Template;
 
 class Home extends BaseController
 {
+    function __construct() 
+    {
+        $session = \Config\Services::session($config);
+        $session = session();
+        if(!isset($_SESSION['TYPE'])){
+            echo view("publico/login");
+            exit();
+        }
+      
+        
+       
+       
+	}
     public function index()
     {
 
         $template=new Template();
         $data=["d"];
         $template->show("teste",  $data);
-        //$teste=new \App\Models\Teste();
-        //$p=$teste->where('ID',1)->findAll();
-        //var_dump($p);
-      
+        
     }
 }

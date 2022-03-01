@@ -19,10 +19,12 @@ class Colaboradores extends BaseController
 		$this->TableEspecialidade=new \App\Models\Especialidade();
         $this->TableUsuario=new \App\Models\Usuario();
         $this->TableBarbeiroespecialidade=new \App\Models\Barbeiroespecialidade();
+        $this->home=new \App\Controllers\Home();
+        $this->login=new \App\Controllers\Login();
 	}
     public function index()
     {
-
+        
         $users=$this->TableUsuario->where("TYPE",2)->findAll();
        
 

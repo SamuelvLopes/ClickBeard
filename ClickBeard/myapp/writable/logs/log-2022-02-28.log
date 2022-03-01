@@ -247,3 +247,19 @@ CRITICAL - 2022-02-28 15:06:53 --> Cannot use object of type stdClass as array
 #3 /app/myapp/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest()
 #4 /app/myapp/public/index.php(37): CodeIgniter\CodeIgniter->run()
 #5 {main}
+CRITICAL - 2022-02-28 16:56:52 --> Invalid file: home.php
+#0 /app/myapp/system/View/View.php(198): CodeIgniter\Exceptions\FrameworkException::forInvalidFile()
+#1 /app/myapp/system/Common.php(1089): CodeIgniter\View\View->render()
+#2 /app/myapp/app/Libraries/Template.php(13): view()
+#3 /app/myapp/app/Controllers/Home.php(14): App\Libraries\Template->show()
+#4 /app/myapp/system/CodeIgniter.php(825): App\Controllers\Home->index()
+#5 /app/myapp/system/CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController()
+#6 /app/myapp/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest()
+#7 /app/myapp/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2022-02-28 21:58:06 --> Call to a member function view() on null
+#0 /app/myapp/system/CodeIgniter.php(825): App\Controllers\Login->index()
+#1 /app/myapp/system/CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController()
+#2 /app/myapp/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest()
+#3 /app/myapp/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}

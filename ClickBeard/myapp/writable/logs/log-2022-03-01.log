@@ -1,0 +1,266 @@
+CRITICAL - 2022-03-01 00:03:47 --> Illegal string offset 'IDUSUARIO'
+#0 /app/myapp/app/Controllers/Login.php(51): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /app/myapp/app/Controllers/Login.php(37): App\Controllers\Login->logar()
+#2 /app/myapp/system/CodeIgniter.php(825): App\Controllers\Login->cadastrar()
+#3 /app/myapp/system/CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController()
+#4 /app/myapp/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest()
+#5 /app/myapp/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2022-03-01 00:07:11 --> Call to a member function index() on null
+#0 /app/myapp/app/Controllers/Login.php(37): App\Controllers\Login->logar()
+#1 /app/myapp/system/CodeIgniter.php(825): App\Controllers\Login->cadastrar()
+#2 /app/myapp/system/CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController()
+#3 /app/myapp/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest()
+#4 /app/myapp/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-03-01 00:28:32 --> Allowed memory size of 134217728 bytes exhausted (tried to allocate 12288 bytes)
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2022-03-01 00:32:36 --> Allowed memory size of 134217728 bytes exhausted (tried to allocate 12288 bytes)
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2022-03-01 00:36:18 --> Call to a member function index() on null
+#0 /app/myapp/system/CodeIgniter.php(802): App\Controllers\Home->__construct()
+#1 /app/myapp/system/CodeIgniter.php(403): CodeIgniter\CodeIgniter->createController()
+#2 /app/myapp/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest()
+#3 /app/myapp/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2022-03-01 00:55:27 --> Invalid file: publico/cadastre.php
+#0 /app/myapp/system/View/View.php(198): CodeIgniter\Exceptions\FrameworkException::forInvalidFile()
+#1 /app/myapp/system/Common.php(1089): CodeIgniter\View\View->render()
+#2 /app/myapp/app/Controllers/Home.php(12): view()
+#3 /app/myapp/system/CodeIgniter.php(802): App\Controllers\Home->__construct()
+#4 /app/myapp/system/CodeIgniter.php(403): CodeIgniter\CodeIgniter->createController()
+#5 /app/myapp/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest()
+#6 /app/myapp/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2022-03-01 02:20:40 --> Call to a member function insert() on null
+#0 /app/myapp/system/CodeIgniter.php(825): App\Controllers\Login->cadastrar()
+#1 /app/myapp/system/CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController()
+#2 /app/myapp/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest()
+#3 /app/myapp/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2022-03-01 02:21:16 --> Call to a member function insert() on null
+#0 /app/myapp/system/CodeIgniter.php(825): App\Controllers\Login->cadastrar()
+#1 /app/myapp/system/CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController()
+#2 /app/myapp/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest()
+#3 /app/myapp/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2022-03-01 02:31:25 --> Call to a member function insert() on null
+#0 /app/myapp/system/CodeIgniter.php(825): App\Controllers\Login->cadastrar()
+#1 /app/myapp/system/CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController()
+#2 /app/myapp/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest()
+#3 /app/myapp/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2022-03-01 02:31:40 --> Call to a member function insert() on null
+#0 /app/myapp/system/CodeIgniter.php(825): App\Controllers\Login->cadastrar()
+#1 /app/myapp/system/CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController()
+#2 /app/myapp/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest()
+#3 /app/myapp/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2022-03-01 02:36:08 --> var_dump() expects at least 1 parameter, 0 given
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /app/myapp/app/Controllers/Home.php(12): var_dump()
+#2 /app/myapp/system/CodeIgniter.php(802): App\Controllers\Home->__construct()
+#3 /app/myapp/system/CodeIgniter.php(403): CodeIgniter\CodeIgniter->createController()
+#4 /app/myapp/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest()
+#5 /app/myapp/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2022-03-01 02:36:16 --> var_dump() expects at least 1 parameter, 0 given
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /app/myapp/app/Controllers/Home.php(12): var_dump()
+#2 /app/myapp/system/CodeIgniter.php(802): App\Controllers\Home->__construct()
+#3 /app/myapp/system/CodeIgniter.php(403): CodeIgniter\CodeIgniter->createController()
+#4 /app/myapp/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest()
+#5 /app/myapp/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2022-03-01 02:36:23 --> var_dump() expects at least 1 parameter, 0 given
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /app/myapp/app/Controllers/Home.php(12): var_dump()
+#2 /app/myapp/system/CodeIgniter.php(802): App\Controllers\Home->__construct()
+#3 /app/myapp/system/CodeIgniter.php(403): CodeIgniter\CodeIgniter->createController()
+#4 /app/myapp/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest()
+#5 /app/myapp/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2022-03-01 02:36:49 --> var_dump() expects at least 1 parameter, 0 given
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /app/myapp/app/Controllers/Home.php(12): var_dump()
+#2 /app/myapp/system/CodeIgniter.php(802): App\Controllers\Home->__construct()
+#3 /app/myapp/system/CodeIgniter.php(403): CodeIgniter\CodeIgniter->createController()
+#4 /app/myapp/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest()
+#5 /app/myapp/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2022-03-01 02:39:24 --> Call to a member function library() on null
+#0 /app/myapp/system/CodeIgniter.php(803): App\Controllers\BaseController->initController()
+#1 /app/myapp/system/CodeIgniter.php(403): CodeIgniter\CodeIgniter->createController()
+#2 /app/myapp/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest()
+#3 /app/myapp/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2022-03-01 02:39:38 --> Call to a member function library() on null
+#0 /app/myapp/system/CodeIgniter.php(803): App\Controllers\BaseController->initController()
+#1 /app/myapp/system/CodeIgniter.php(403): CodeIgniter\CodeIgniter->createController()
+#2 /app/myapp/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest()
+#3 /app/myapp/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2022-03-01 02:40:16 --> Call to a member function library() on null
+#0 /app/myapp/system/CodeIgniter.php(803): App\Controllers\BaseController->initController()
+#1 /app/myapp/system/CodeIgniter.php(403): CodeIgniter\CodeIgniter->createController()
+#2 /app/myapp/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest()
+#3 /app/myapp/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2022-03-01 02:40:55 --> Call to a member function library() on null
+#0 /app/myapp/system/CodeIgniter.php(803): App\Controllers\BaseController->initController()
+#1 /app/myapp/system/CodeIgniter.php(403): CodeIgniter\CodeIgniter->createController()
+#2 /app/myapp/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest()
+#3 /app/myapp/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2022-03-01 02:41:35 --> Call to a member function library() on null
+#0 /app/myapp/system/CodeIgniter.php(803): App\Controllers\BaseController->initController()
+#1 /app/myapp/system/CodeIgniter.php(403): CodeIgniter\CodeIgniter->createController()
+#2 /app/myapp/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest()
+#3 /app/myapp/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2022-03-01 02:41:47 --> Call to a member function library() on null
+#0 /app/myapp/system/CodeIgniter.php(803): App\Controllers\BaseController->initController()
+#1 /app/myapp/system/CodeIgniter.php(403): CodeIgniter\CodeIgniter->createController()
+#2 /app/myapp/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest()
+#3 /app/myapp/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2022-03-01 02:48:39 --> Call to undefined method CodeIgniter\Session\Session::set_userdata()
+#0 /app/myapp/system/CodeIgniter.php(825): App\Controllers\Login->cadastrar()
+#1 /app/myapp/system/CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController()
+#2 /app/myapp/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest()
+#3 /app/myapp/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2022-03-01 02:49:36 --> Call to undefined method CodeIgniter\Session\Session::set_userdata()
+#0 /app/myapp/system/CodeIgniter.php(825): App\Controllers\Login->cadastrar()
+#1 /app/myapp/system/CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController()
+#2 /app/myapp/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest()
+#3 /app/myapp/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2022-03-01 02:50:34 --> Call to undefined method CodeIgniter\Session\Session::set_userdata()
+#0 /app/myapp/system/CodeIgniter.php(825): App\Controllers\Login->cadastrar()
+#1 /app/myapp/system/CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController()
+#2 /app/myapp/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest()
+#3 /app/myapp/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2022-03-01 02:50:50 --> Call to undefined method CodeIgniter\Session\Session::set_userdata()
+#0 /app/myapp/system/CodeIgniter.php(825): App\Controllers\Login->cadastrar()
+#1 /app/myapp/system/CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController()
+#2 /app/myapp/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest()
+#3 /app/myapp/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2022-03-01 02:52:57 --> Call to a member function set_userdata() on null
+#0 /app/myapp/system/CodeIgniter.php(825): App\Controllers\Login->cadastrar()
+#1 /app/myapp/system/CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController()
+#2 /app/myapp/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest()
+#3 /app/myapp/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2022-03-01 02:53:38 --> Call to a member function set_userdata() on array
+#0 /app/myapp/system/CodeIgniter.php(825): App\Controllers\Login->cadastrar()
+#1 /app/myapp/system/CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController()
+#2 /app/myapp/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest()
+#3 /app/myapp/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2022-03-01 02:57:31 --> Cannot call constructor
+#0 /app/myapp/system/CodeIgniter.php(802): App\Controllers\Login->__construct()
+#1 /app/myapp/system/CodeIgniter.php(403): CodeIgniter\CodeIgniter->createController()
+#2 /app/myapp/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest()
+#3 /app/myapp/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2022-03-01 02:58:00 --> Cannot call constructor
+#0 /app/myapp/system/CodeIgniter.php(802): App\Controllers\Login->__construct()
+#1 /app/myapp/system/CodeIgniter.php(403): CodeIgniter\CodeIgniter->createController()
+#2 /app/myapp/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest()
+#3 /app/myapp/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2022-03-01 02:59:47 --> Call to undefined method CodeIgniter\Session\Session::set_userdata()
+#0 /app/myapp/system/CodeIgniter.php(825): App\Controllers\Login->cadastrar()
+#1 /app/myapp/system/CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController()
+#2 /app/myapp/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest()
+#3 /app/myapp/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2022-03-01 03:00:07 --> Call to a member function set_userdata() on null
+#0 /app/myapp/system/CodeIgniter.php(825): App\Controllers\Login->cadastrar()
+#1 /app/myapp/system/CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController()
+#2 /app/myapp/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest()
+#3 /app/myapp/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2022-03-01 03:01:56 --> Cannot call constructor
+#0 /app/myapp/system/CodeIgniter.php(802): App\Controllers\Login->__construct()
+#1 /app/myapp/system/CodeIgniter.php(403): CodeIgniter\CodeIgniter->createController()
+#2 /app/myapp/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest()
+#3 /app/myapp/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2022-03-01 03:02:27 --> Cannot call constructor
+#0 /app/myapp/system/CodeIgniter.php(802): App\Controllers\Login->__construct()
+#1 /app/myapp/system/CodeIgniter.php(403): CodeIgniter\CodeIgniter->createController()
+#2 /app/myapp/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest()
+#3 /app/myapp/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2022-03-01 03:02:45 --> Cannot call constructor
+#0 /app/myapp/system/CodeIgniter.php(802): App\Controllers\Login->__construct()
+#1 /app/myapp/system/CodeIgniter.php(403): CodeIgniter\CodeIgniter->createController()
+#2 /app/myapp/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest()
+#3 /app/myapp/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2022-03-01 03:06:43 --> syntax error, unexpected '}'
+#0 /app/myapp/system/Autoloader/Autoloader.php(241): CodeIgniter\Autoloader\Autoloader->includeFile()
+#1 /app/myapp/system/Autoloader/Autoloader.php(219): CodeIgniter\Autoloader\Autoloader->loadInNamespace()
+#2 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass()
+#3 /app/myapp/app/Controllers/Login.php(7): spl_autoload_call()
+#4 /app/myapp/system/Router/Router.php(518): include_once('/app/myapp/app/...')
+#5 /app/myapp/system/Router/Router.php(175): CodeIgniter\Router\Router->autoRoute()
+#6 /app/myapp/system/CodeIgniter.php(719): CodeIgniter\Router\Router->handle()
+#7 /app/myapp/system/CodeIgniter.php(361): CodeIgniter\CodeIgniter->tryToRouteIt()
+#8 /app/myapp/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest()
+#9 /app/myapp/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2022-03-01 03:08:20 --> Call to undefined method CodeIgniter\Session\Session::set_userdata()
+#0 /app/myapp/system/CodeIgniter.php(825): App\Controllers\Login->cadastrar()
+#1 /app/myapp/system/CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController()
+#2 /app/myapp/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest()
+#3 /app/myapp/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2022-03-01 03:08:30 --> Call to undefined method CodeIgniter\Session\Session::set_userdata()
+#0 /app/myapp/system/CodeIgniter.php(825): App\Controllers\Login->cadastrar()
+#1 /app/myapp/system/CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController()
+#2 /app/myapp/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest()
+#3 /app/myapp/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2022-03-01 03:09:59 --> Call to undefined method CodeIgniter\Session\Session::set_userdata()
+#0 /app/myapp/system/CodeIgniter.php(825): App\Controllers\Login->cadastrar()
+#1 /app/myapp/system/CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController()
+#2 /app/myapp/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest()
+#3 /app/myapp/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2022-03-01 03:10:10 --> Call to a member function set_userdata() on null
+#0 /app/myapp/system/CodeIgniter.php(825): App\Controllers\Login->cadastrar()
+#1 /app/myapp/system/CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController()
+#2 /app/myapp/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest()
+#3 /app/myapp/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2022-03-01 03:10:29 --> Call to undefined method CodeIgniter\Session\Session::set_userdata()
+#0 /app/myapp/system/CodeIgniter.php(825): App\Controllers\Login->cadastrar()
+#1 /app/myapp/system/CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController()
+#2 /app/myapp/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest()
+#3 /app/myapp/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2022-03-01 03:11:10 --> Call to undefined method CodeIgniter\Session\Session::set_userdata()
+#0 /app/myapp/system/CodeIgniter.php(825): App\Controllers\Login->cadastrar()
+#1 /app/myapp/system/CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController()
+#2 /app/myapp/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest()
+#3 /app/myapp/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2022-03-01 03:11:14 --> Call to undefined method CodeIgniter\Session\Session::set_userdata()
+#0 /app/myapp/system/CodeIgniter.php(825): App\Controllers\Login->cadastrar()
+#1 /app/myapp/system/CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController()
+#2 /app/myapp/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest()
+#3 /app/myapp/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2022-03-01 03:13:20 --> Cannot use object of type CodeIgniter\Session\Session as array
+#0 /app/myapp/system/CodeIgniter.php(802): App\Controllers\Home->__construct()
+#1 /app/myapp/system/CodeIgniter.php(403): CodeIgniter\CodeIgniter->createController()
+#2 /app/myapp/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest()
+#3 /app/myapp/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
