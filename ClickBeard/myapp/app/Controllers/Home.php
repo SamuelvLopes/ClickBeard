@@ -48,7 +48,7 @@ class Home extends BaseController
             
             $agendamentos[$i]->ESPECIALIDADE=$this->TableEspecialidade->where("ID",$agendamentos[$i]->IDESPECIALIDADE)->findAll()[0]->DESCRICAO;
             $agendamentos[$i]->BARBEIRO=$this->TableUsuario->where("IDUSUARIO",$agendamentos[$i]->IDBARBEIRO)->findAll()[0]->NOME;
-            
+            $agendamentos[$i]->CLIENTE=$this->TableUsuario->where("IDUSUARIO",$agendamentos[$i]->IDUSUARIO)->findAll()[0]->NOME;
         } 
         
 
@@ -59,8 +59,7 @@ class Home extends BaseController
             "numbarbeiros"=>$numbarbeiros,
             "numespecialidade"=>$numespecialidade
         ];
-        //var_dump($data);
-        //exit();
+        
         $this->template->show("administrador/home",  $data);
 
         }else{

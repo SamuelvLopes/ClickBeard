@@ -211,3 +211,56 @@ CRITICAL - 2022-03-02 11:29:59 --> date() expects at least 1 parameter, 0 given
 #4 /app/myapp/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest()
 #5 /app/myapp/public/index.php(37): CodeIgniter\CodeIgniter->run()
 #6 {main}
+CRITICAL - 2022-03-02 12:11:20 --> Call to a member function index() on null
+#0 /app/myapp/app/Controllers/Login.php(65): App\Controllers\Login->cadastro()
+#1 /app/myapp/system/CodeIgniter.php(825): App\Controllers\Login->cadastrar()
+#2 /app/myapp/system/CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController()
+#3 /app/myapp/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest()
+#4 /app/myapp/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-03-02 12:11:29 --> Call to a member function index() on null
+#0 /app/myapp/app/Controllers/Login.php(65): App\Controllers\Login->cadastro()
+#1 /app/myapp/system/CodeIgniter.php(825): App\Controllers\Login->cadastrar()
+#2 /app/myapp/system/CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController()
+#3 /app/myapp/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest()
+#4 /app/myapp/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-03-02 12:11:31 --> Call to a member function index() on null
+#0 /app/myapp/system/CodeIgniter.php(825): App\Controllers\Login->cadastro()
+#1 /app/myapp/system/CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController()
+#2 /app/myapp/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest()
+#3 /app/myapp/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2022-03-02 12:34:58 --> Call to a member function index() on null
+#0 /app/myapp/app/Controllers/Login.php(65): App\Controllers\Login->cadastro()
+#1 /app/myapp/system/CodeIgniter.php(825): App\Controllers\Login->cadastrar()
+#2 /app/myapp/system/CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController()
+#3 /app/myapp/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest()
+#4 /app/myapp/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-03-02 12:35:04 --> Call to a member function index() on null
+#0 /app/myapp/app/Controllers/Login.php(65): App\Controllers\Login->cadastro()
+#1 /app/myapp/system/CodeIgniter.php(825): App\Controllers\Login->cadastrar()
+#2 /app/myapp/system/CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController()
+#3 /app/myapp/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest()
+#4 /app/myapp/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-03-02 12:48:28 --> Call to a member function index() on null
+#0 /app/myapp/app/Controllers/Login.php(65): App\Controllers\Login->cadastro()
+#1 /app/myapp/system/CodeIgniter.php(825): App\Controllers\Login->cadastrar()
+#2 /app/myapp/system/CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController()
+#3 /app/myapp/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest()
+#4 /app/myapp/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-03-02 12:48:31 --> Call to a member function index() on null
+#0 /app/myapp/system/CodeIgniter.php(825): App\Controllers\Login->cadastro()
+#1 /app/myapp/system/CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController()
+#2 /app/myapp/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest()
+#3 /app/myapp/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2022-03-02 12:48:38 --> Call to a member function index() on null
+#0 /app/myapp/system/CodeIgniter.php(825): App\Controllers\Login->cadastro()
+#1 /app/myapp/system/CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController()
+#2 /app/myapp/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest()
+#3 /app/myapp/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}

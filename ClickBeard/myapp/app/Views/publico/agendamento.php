@@ -1,4 +1,5 @@
 <h1>Agendamentos</h1>
+
 <!-- Button trigger modal -->
 <button type="button" class="btn bg-gradient-success" data-bs-toggle="modal" data-bs-target="#exampleModal">
   Fazer um agendamento
@@ -10,7 +11,7 @@
     <div class="modal-content">
       <div class="modal-header">
         <h5 class="modal-title font-weight-normal" id="exampleModalLabel">Novo Agendamento</h5>
-        <button type="button" class="btn-close text-dark" data-bs-dismiss="modal" aria-label="Close">
+        <button onclick="document.location.reload(true)" type="button" class="btn-close text-dark" data-bs-dismiss="modal" aria-label="Close">
           <span aria-hidden="true">&times;</span>
         </button>
       </div>
@@ -26,6 +27,10 @@
          </label>
           <input autocomplete='off' name="especialidade" id='form_especialidade' type="text" class="form-control" required>
        </div>
+       <p class="mt-4 text-sm text-center">
+                    Não sabe as especialidades que temos?
+                    <a onclick="alert('funfa')" class="text-primary text-gradient font-weight-bold">Exibir Lista</a>
+                  </p>
         <div id="botoes_especialidade">
          
       

@@ -66,6 +66,7 @@ function escolheespecialidade(id,especialidade) {
     document.getElementById("form_especialidade2").value=id;
     let select;
     $.post('/agendar/buscarbarbeiro', {especialidade:especialidade}, function (retorno) {
+
         document.getElementById("divbabeiroselect").style.display="block";
         document.getElementById("babeiroselect").innerHTML=retorno;
         
@@ -73,6 +74,7 @@ function escolheespecialidade(id,especialidade) {
     
 }
 function procurarespecialidade() {
+  
   //seria bom não deixar essa função rodando assim por consumir o servidor de forma desnessesaria
   let especialidade=document.getElementById("form_especialidade").value;
   if(especialidade!=""){
@@ -110,6 +112,7 @@ function pergunta(){
     } 
  }
 
+ 
 
 
 

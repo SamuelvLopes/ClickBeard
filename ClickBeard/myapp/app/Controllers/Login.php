@@ -37,7 +37,7 @@ class Login extends BaseController
         unset($_SESSION['logged_in']);
         unset($_SESSION['PASS']);
         unset($_SESSION['username']);
-        
+        unset($_SESSION['cadastro']);
         $this->home=new \App\Controllers\Home();
         $this->home->index();
     }
@@ -45,8 +45,10 @@ class Login extends BaseController
     {
         $session = \Config\Services::session($config);
         $session = session();
-
+        
         if(isset($_SESSION['TYPE'])){
+            
+            $this->home=new \App\Controllers\Home();
             $this->home->index();
         }else{
        echo view("publico/cadastre");
@@ -63,6 +65,7 @@ class Login extends BaseController
       
         if($usuario!=null){
             $this->cadastro();
+            $_SESSION['mensagem']="Email já existe no cadastro";
             exit();
         }
         
@@ -75,10 +78,11 @@ class Login extends BaseController
         
         
         $this->TableUsuario->insert($data);
-
+        
         $_SESSION['EMAIL']=strtoupper($_POST['EMAIL']);
         $_SESSION['PASS']=$_POST['PASSWORD'];
         $this->logar();
+
     }
     public function logar(){
         $session = \Config\Services::session($config);
@@ -88,7 +92,9 @@ class Login extends BaseController
 
             $_POST['email']=$_SESSION['EMAIL'];
             $_POST['password']=$_SESSION['PASS'];
+
         }
+
         $this->TableUsuario=new \App\Models\Usuario();
         $user=$this->TableUsuario->where('EMAIL',strtoupper($_POST['email']))->findAll()[0];
         
@@ -97,13 +103,18 @@ class Login extends BaseController
                       
             $_SESSION['ID']=$user->IDUSUARIO;
             $_SESSION['TYPE']=$user->TYPE;
-        
+           
+        }else{
+            $_SESSION['mensagem']="Senha invalida";
         }
+        }else{
+
+            $_SESSION['mensagem']="Email não encontrado";
         }
             
-            $this->index();
+        //var_dump($_SESSION);
+        $this->index();
         
-        //
     }
 
 }

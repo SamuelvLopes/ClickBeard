@@ -70,11 +70,13 @@
     <table class="table align-items-center mb-0">
       <thead>
         <tr>
+        <th class="text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">ID</th>
           <th class="text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">Especialidade</th>
+          <th class="text-uppercase text-secondary text-xxs font-weight-bolder opacity-7 ps-2">Cliente</th>
           <th class="text-uppercase text-secondary text-xxs font-weight-bolder opacity-7 ps-2">Data</th>
           <th class="text-uppercase text-secondary text-xxs font-weight-bolder opacity-7 ps-2">Horario</th>
           <th class="text-uppercase text-secondary text-xxs font-weight-bolder opacity-7 ps-2">Barbeiro</th>
-          <th></th>
+          
         </tr>
       </thead>
       <tbody>
@@ -85,6 +87,15 @@
       $data=explode(" ",$agendamento->HORARIO);
       echo'  
         <tr>
+        <td>
+            <div class="d-flex px-2">
+              
+                
+              <div class="my-auto">
+                <h6 class="mb-0 text-xs">#'.$agendamento->IDAGENDAMENTO.'</h6>
+              </div>
+            </div>
+          </td>
           <td>
             <div class="d-flex px-2">
               
@@ -95,7 +106,23 @@
             </div>
           </td>
           <td>
-            <p class="text-xs font-weight-normal mb-0">'.date("d/m/Y", strtotime($data[0])).'</p>
+            <div class="d-flex px-2">
+              
+                
+              <div class="my-auto">
+                <h6 class="mb-0 text-xs">'.$agendamento->CLIENTE.'</h6>
+              </div>
+            </div>
+          </td>
+          <td>
+          <div class="d-flex px-2">
+              
+                
+              <div class="my-auto">
+                <h6 class="mb-0 text-xs">'.date("d/m/Y", strtotime($data[0])).'</h6>
+              </div>
+            </div>
+            
           </td>
           <td>
             <span class="badge badge-dot me-4">
