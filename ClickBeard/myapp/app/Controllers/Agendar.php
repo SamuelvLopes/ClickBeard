@@ -20,23 +20,33 @@ class Agendar extends BaseController
         $session = \Config\Services::session($config);
         $session = session();
         $this->TableAgendamento=new \App\Models\Agendamento();
-
+        $this->TableBarbeiroespecialidade=new \App\Models\Barbeiroespecialidade();
+        $this->TableUsuario=new \App\Models\Usuario();
         $template=new Template();
         
         $agendamentos=$this->TableAgendamento->where("IDUSUARIO",$_SESSION['ID']);
         $agendamentos=$agendamentos->where("HORARIO >",date('Y-m-d')." 00:00:01");
         $agendamentos=$agendamentos->findAll();
+        
+        for ($i = 0; $i <= count($agendamentos)-1; $i++) {
+            
+            $agendamentos[$i]->ESPECIALIDADE=$this->TableEspecialidade->where("ID",$agendamentos[$i]->IDESPECIALIDADE)->findAll()[0]->DESCRICAO;
+            $agendamentos[$i]->BARBEIRO=$this->TableUsuario->where("IDUSUARIO",$agendamentos[$i]->IDBARBEIRO)->findAll()[0]->NOME;
+            
+        } 
+        
+
+
         $data=[
             "agendamentos"=>$agendamentos
         ];
-        
+       
         
         $template->show("publico/agendamento",  $data);
 
     }
     function buscarbarbeiro(){
-       // $_POST['especialidade']="CORTE COM RISQUINHO";
-        //$_POST['especialidade']="RAMAL";
+      
         
         $this->TableUsuario=new \App\Models\Usuario();
         $this->TableBarbeiroespecialidade=new \App\Models\Barbeiroespecialidade();

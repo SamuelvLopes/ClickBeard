@@ -1,6 +1,3 @@
-<?php 
-//var_dump($agendamentos);exit();
-?>
 <h1>Agendamentos</h1>
 <!-- Button trigger modal -->
 <button type="button" class="btn bg-gradient-success" data-bs-toggle="modal" data-bs-target="#exampleModal">
@@ -65,37 +62,42 @@
         </tr>
       </thead>
       <tbody>
+      <?php
+      foreach($agendamentos as $agendamento){
+        
+      $data=explode(" ",$agendamento->HORARIO);
+      echo'  
         <tr>
           <td>
             <div class="d-flex px-2">
               
                 
               <div class="my-auto">
-                <h6 class="mb-0 text-xs">Spotify</h6>
+                <h6 class="mb-0 text-xs">'.$agendamento->ESPECIALIDADE.'</h6>
               </div>
             </div>
           </td>
           <td>
-            <p class="text-xs font-weight-normal mb-0">$2,500</p>
+            <p class="text-xs font-weight-normal mb-0">'.date("d/m/Y", strtotime($data[0])).'</p>
           </td>
           <td>
             <span class="badge badge-dot me-4">
               <i class="bg-info"></i>
-              <span class="text-dark text-xs">working</span>
+              <span class="text-dark text-xs">'.$data[1].'</span>
             </span>
           </td>
           <td>
             <span class="badge badge-dot me-4">
               <i class="bg-info"></i>
-              <span class="text-dark text-xs">Samuel</span>
+              <span class="text-dark text-xs">'.$agendamento->BARBEIRO.'</span>
             </span>
           </td>
           
         </tr>
-
-
+      ';
+      }
        
-
+      ?>
         
 
       </tbody>

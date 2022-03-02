@@ -17,3 +17,44 @@ ERROR - 2022-03-02 06:57:26 --> Duplicate entry '0' for key 'PRIMARY'
 ERROR - 2022-03-02 06:57:58 --> Duplicate entry '0' for key 'PRIMARY'
 ERROR - 2022-03-02 06:59:07 --> Duplicate entry '0' for key 'PRIMARY'
 ERROR - 2022-03-02 06:59:42 --> Duplicate entry '0' for key 'PRIMARY'
+CRITICAL - 2022-03-02 07:54:00 --> Creating default object from empty value
+#0 /app/myapp/app/Controllers/Agendar.php(32): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /app/myapp/system/CodeIgniter.php(825): App\Controllers\Agendar->index()
+#2 /app/myapp/system/CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController()
+#3 /app/myapp/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest()
+#4 /app/myapp/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-03-02 07:54:41 --> Creating default object from empty value
+#0 /app/myapp/app/Controllers/Agendar.php(33): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /app/myapp/system/CodeIgniter.php(825): App\Controllers\Agendar->index()
+#2 /app/myapp/system/CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController()
+#3 /app/myapp/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest()
+#4 /app/myapp/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-03-02 07:57:27 --> Creating default object from empty value
+#0 /app/myapp/app/Controllers/Agendar.php(33): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /app/myapp/system/CodeIgniter.php(825): App\Controllers\Agendar->index()
+#2 /app/myapp/system/CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController()
+#3 /app/myapp/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest()
+#4 /app/myapp/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-03-02 07:58:51 --> Attempt to assign property 'E' of non-object
+#0 /app/myapp/app/Controllers/Agendar.php(34): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /app/myapp/system/CodeIgniter.php(825): App\Controllers\Agendar->index()
+#2 /app/myapp/system/CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController()
+#3 /app/myapp/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest()
+#4 /app/myapp/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-03-02 07:59:06 --> Attempt to assign property 'E' of non-object
+#0 /app/myapp/app/Controllers/Agendar.php(34): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /app/myapp/system/CodeIgniter.php(825): App\Controllers\Agendar->index()
+#2 /app/myapp/system/CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController()
+#3 /app/myapp/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest()
+#4 /app/myapp/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-03-02 07:59:21 --> Cannot use string offset as an object
+#0 /app/myapp/system/CodeIgniter.php(825): App\Controllers\Agendar->index()
+#1 /app/myapp/system/CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController()
+#2 /app/myapp/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest()
+#3 /app/myapp/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
