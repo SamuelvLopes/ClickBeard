@@ -65,7 +65,7 @@ function escolheespecialidade(id,especialidade) {
     document.getElementById("form_especialidade").value=especialidade;
     document.getElementById("form_especialidade2").value=id;
     let select;
-    $.post('/agendar/buscarbarbeiro', {especialidade:especialidade}, function (retorno) {
+    $.post('/agendar/buscarbarbeiro', {id:id}, function (retorno) {
 
         document.getElementById("divbabeiroselect").style.display="block";
         document.getElementById("babeiroselect").innerHTML=retorno;
@@ -103,7 +103,23 @@ function procurarespecialidade() {
 
   }
 }
+function selecionaespecialidade(){
+    id=document.getElementById("select-especialidadade").value;
+    document.getElementById("form_especialidade2").value=id;
+    document.getElementById("form_especialidade").value=id;
+    escolheespecialidade(id,'SOMBRANCELHAS HAVAINAS2')
 
+}
+function mostarespecialidades(){
+    document.getElementById("mensagem-especialidade").style.display="none";
+    document.getElementById("div_especialidade").style.display="none";
+    document.getElementById("mensagem-especialidade").style.display="none";
+    document.getElementById("select-especialidade").style.display="block";
+    id=document.getElementById("select-especialidadade").value;
+    document.getElementById("form_especialidade").value=1;
+    document.getElementById("form_especialidade2").value=1;
+
+}
 function pergunta(){ 
     if (confirm('Tem certeza que quer realizar esse agendamento?')){ 
        //document.agendamento_form.submit();

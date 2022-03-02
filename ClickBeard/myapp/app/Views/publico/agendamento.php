@@ -27,10 +27,20 @@
          </label>
           <input autocomplete='off' name="especialidade" id='form_especialidade' type="text" class="form-control" required>
        </div>
-       <p class="mt-4 text-sm text-center">
+       <p id='mensagem-especialidade' class="mt-4 text-sm text-center">
                     Não sabe as especialidades que temos?
-                    <a onclick="alert('funfa')" class="text-primary text-gradient font-weight-bold">Exibir Lista</a>
+                    <a onclick="mostarespecialidades()" class="text-primary text-gradient font-weight-bold">Exibir Lista</a>
                   </p>
+        <div id='select-especialidade' style='display:none' class="input-group input-group-static mb-4">
+     <label for="exampleFormControlSelect1" class="ms-0">Selecione a especialidade que você deseja:</label>
+         <select onchange="selecionaespecialidade()" class="form-control" id="select-especialidadade">
+           <?php
+          foreach($especialidades as $especialidade){
+           echo'<option value="'.$especialidade->ID.'">'.$especialidade->DESCRICAO.'</option>';
+          }
+           ?>
+          </select>
+        </div>          
         <div id="botoes_especialidade">
          
       

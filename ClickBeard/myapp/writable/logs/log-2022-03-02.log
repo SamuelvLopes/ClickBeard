@@ -264,3 +264,13 @@ CRITICAL - 2022-03-02 12:48:38 --> Call to a member function index() on null
 #2 /app/myapp/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest()
 #3 /app/myapp/public/index.php(37): CodeIgniter\CodeIgniter->run()
 #4 {main}
+CRITICAL - 2022-03-02 16:29:57 --> syntax error, unexpected '$data' (T_VARIABLE)
+#0 /app/myapp/system/Router/Router.php(175): CodeIgniter\Router\Router->autoRoute()
+#1 /app/myapp/system/CodeIgniter.php(719): CodeIgniter\Router\Router->handle()
+#2 /app/myapp/system/CodeIgniter.php(361): CodeIgniter\CodeIgniter->tryToRouteIt()
+#3 /app/myapp/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest()
+#4 /app/myapp/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+ERROR - 2022-03-02 17:55:38 --> Column 'IDUSUARIO' cannot be null
+ERROR - 2022-03-02 17:56:06 --> Column 'IDUSUARIO' cannot be null
+ERROR - 2022-03-02 17:56:27 --> Column 'IDUSUARIO' cannot be null

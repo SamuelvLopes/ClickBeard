@@ -14,7 +14,12 @@ class Agendar extends BaseController
     {
 
 		$this->TableEspecialidade=new \App\Models\Especialidade();
-
+        $session = \Config\Services::session($config);
+        $session = session();
+        if(!isset($_SESSION['TYPE'])){
+            echo view("publico/login");
+            exit();
+        }
     }
     function index(){
         $session = \Config\Services::session($config);
@@ -34,14 +39,16 @@ class Agendar extends BaseController
             $agendamentos[$i]->BARBEIRO=$this->TableUsuario->where("IDUSUARIO",$agendamentos[$i]->IDBARBEIRO)->findAll()[0]->NOME;
             
         } 
-        
+        $this->TableEspecialidade=new \App\Models\Especialidade();
+        $especialidades=$this->TableEspecialidade->findAll();
+
 
 
         $data=[
-            "agendamentos"=>$agendamentos
+            "agendamentos"=>$agendamentos,
+            "especialidades"=>$especialidades
         ];
-      
-
+        
         $template->show("publico/agendamento",  $data);
 
     }
@@ -51,7 +58,7 @@ class Agendar extends BaseController
         $this->TableUsuario=new \App\Models\Usuario();
         $this->TableBarbeiroespecialidade=new \App\Models\Barbeiroespecialidade();
         $this->TableEspecialidade=new \App\Models\Especialidade();
-        $item=$this->TableEspecialidade->where("DESCRICAO",$_POST['especialidade'])->findAll()[0]->ID;
+        $item=$this->TableEspecialidade->where("ID",$_POST['id'])->findAll()[0]->ID;
         
         $itens=$this->TableBarbeiroespecialidade->where("IDESPECIALIDADE",$item)->findAll();
         $ids=[];
