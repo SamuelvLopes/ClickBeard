@@ -40,13 +40,13 @@ class Agendar extends BaseController
         $data=[
             "agendamentos"=>$agendamentos
         ];
-       
-        
+      
+
         $template->show("publico/agendamento",  $data);
 
     }
     function buscarbarbeiro(){
-      
+       
         
         $this->TableUsuario=new \App\Models\Usuario();
         $this->TableBarbeiroespecialidade=new \App\Models\Barbeiroespecialidade();

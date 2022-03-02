@@ -117,3 +117,97 @@ CRITICAL - 2022-03-02 10:10:53 --> Call to a member function index() on null
 #3 /app/myapp/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest()
 #4 /app/myapp/public/index.php(37): CodeIgniter\CodeIgniter->run()
 #5 {main}
+CRITICAL - 2022-03-02 10:17:29 --> Call to a member function show() on null
+#0 /app/myapp/app/Controllers/Login.php(23): App\Controllers\Home->index()
+#1 /app/myapp/app/Controllers/Login.php(104): App\Controllers\Login->index()
+#2 /app/myapp/system/CodeIgniter.php(825): App\Controllers\Login->logar()
+#3 /app/myapp/system/CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController()
+#4 /app/myapp/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest()
+#5 /app/myapp/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2022-03-02 10:17:47 --> Call to a member function show() on null
+#0 /app/myapp/app/Controllers/Login.php(23): App\Controllers\Home->index()
+#1 /app/myapp/app/Controllers/Login.php(104): App\Controllers\Login->index()
+#2 /app/myapp/system/CodeIgniter.php(825): App\Controllers\Login->logar()
+#3 /app/myapp/system/CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController()
+#4 /app/myapp/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest()
+#5 /app/myapp/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2022-03-02 10:18:23 --> Invalid argument supplied for foreach()
+#0 /app/myapp/app/Views/administrador/colaboradores.php(116): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /app/myapp/system/View/View.php(210): include('/app/myapp/app/...')
+#2 /app/myapp/system/View/View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 /app/myapp/system/Common.php(1089): CodeIgniter\View\View->render()
+#4 /app/myapp/app/Libraries/Template.php(13): view()
+#5 /app/myapp/app/Controllers/Home.php(29): App\Libraries\Template->show()
+#6 /app/myapp/app/Controllers/Login.php(23): App\Controllers\Home->index()
+#7 /app/myapp/app/Controllers/Login.php(104): App\Controllers\Login->index()
+#8 /app/myapp/system/CodeIgniter.php(825): App\Controllers\Login->logar()
+#9 /app/myapp/system/CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController()
+#10 /app/myapp/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest()
+#11 /app/myapp/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2022-03-02 11:02:32 --> Invalid argument supplied for foreach()
+#0 /app/myapp/app/Views/administrador/home.php(82): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /app/myapp/system/View/View.php(210): include('/app/myapp/app/...')
+#2 /app/myapp/system/View/View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 /app/myapp/system/Common.php(1089): CodeIgniter\View\View->render()
+#4 /app/myapp/app/Libraries/Template.php(13): view()
+#5 /app/myapp/app/Controllers/Home.php(29): App\Libraries\Template->show()
+#6 /app/myapp/system/CodeIgniter.php(825): App\Controllers\Home->index()
+#7 /app/myapp/system/CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController()
+#8 /app/myapp/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest()
+#9 /app/myapp/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2022-03-02 11:10:44 --> Call to a member function where() on null
+#0 /app/myapp/system/CodeIgniter.php(825): App\Controllers\Home->index()
+#1 /app/myapp/system/CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController()
+#2 /app/myapp/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest()
+#3 /app/myapp/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2022-03-02 11:11:22 --> Call to a member function where() on null
+#0 /app/myapp/system/CodeIgniter.php(825): App\Controllers\Home->index()
+#1 /app/myapp/system/CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController()
+#2 /app/myapp/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest()
+#3 /app/myapp/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2022-03-02 11:21:48 --> Call to a member function format() on null
+#0 /app/myapp/system/CodeIgniter.php(825): App\Controllers\Home->index()
+#1 /app/myapp/system/CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController()
+#2 /app/myapp/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest()
+#3 /app/myapp/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2022-03-02 11:22:07 --> Class 'App\Controllers\DateTime' not found
+#0 /app/myapp/system/CodeIgniter.php(825): App\Controllers\Home->index()
+#1 /app/myapp/system/CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController()
+#2 /app/myapp/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest()
+#3 /app/myapp/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2022-03-02 11:22:10 --> Class 'App\Controllers\DateTime' not found
+#0 /app/myapp/system/CodeIgniter.php(825): App\Controllers\Home->index()
+#1 /app/myapp/system/CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController()
+#2 /app/myapp/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest()
+#3 /app/myapp/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2022-03-02 11:29:12 --> Class 'App\Controllers\DateTime' not found
+#0 /app/myapp/system/CodeIgniter.php(825): App\Controllers\Home->index()
+#1 /app/myapp/system/CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController()
+#2 /app/myapp/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest()
+#3 /app/myapp/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2022-03-02 11:29:54 --> date() expects at least 1 parameter, 0 given
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /app/myapp/app/Controllers/Home.php(36): date()
+#2 /app/myapp/system/CodeIgniter.php(825): App\Controllers\Home->index()
+#3 /app/myapp/system/CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController()
+#4 /app/myapp/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest()
+#5 /app/myapp/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2022-03-02 11:29:59 --> date() expects at least 1 parameter, 0 given
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /app/myapp/app/Controllers/Home.php(36): date()
+#2 /app/myapp/system/CodeIgniter.php(825): App\Controllers\Home->index()
+#3 /app/myapp/system/CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController()
+#4 /app/myapp/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest()
+#5 /app/myapp/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#6 {main}
