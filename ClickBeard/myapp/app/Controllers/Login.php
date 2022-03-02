@@ -79,7 +79,7 @@ class Login extends BaseController
         if(isset($_SESSION['EMAIL'])){
 
             $_POST['email']=$_SESSION['EMAIL'];
-            $_POST['password']=$_SESSION['password'];
+            $_POST['password']=$_SESSION['PASS'];
         }
         $this->TableUsuario=new \App\Models\Usuario();
         $user=$this->TableUsuario->where('EMAIL',strtoupper($_POST['email']))->findAll()[0];

@@ -19,9 +19,18 @@ class Agendar extends BaseController
     function index(){
         $session = \Config\Services::session($config);
         $session = session();
-        
+        $this->TableAgendamento=new \App\Models\Agendamento();
+
         $template=new Template();
-        $data=["d"];
+        
+        $agendamentos=$this->TableAgendamento->where("IDUSUARIO",$_SESSION['ID']);
+        $agendamentos=$agendamentos->where("HORARIO >",date('Y-m-d')." 00:00:01");
+        $agendamentos=$agendamentos->findAll();
+        $data=[
+            "agendamentos"=>$agendamentos
+        ];
+        
+        
         $template->show("publico/agendamento",  $data);
 
     }
@@ -74,7 +83,17 @@ class Agendar extends BaseController
 
     }
     function agendamento(){
-
-        var_dump($_POST);
+        $session = \Config\Services::session($config);
+        $session = session();
+        $this->TableAgendamento=new \App\Models\Agendamento();
+      
+        $data=[
+            "HORARIO"=>$_POST['horario'],
+            "IDBARBEIRO"=>$_POST['barbeiro'],
+            "IDUSUARIO"=>$_SESSION['ID'],
+            "IDESPECIALIDADE"=>$_POST['especialidade2']
+        ];
+        $this->TableAgendamento->insert($data);
+        $this->index();
     }
 }

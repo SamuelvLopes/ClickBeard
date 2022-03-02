@@ -104,7 +104,9 @@ function procurarespecialidade() {
 
 function pergunta(){ 
     if (confirm('Tem certeza que quer realizar esse agendamento?')){ 
-       document.agendamento_form.submit() 
+       //document.agendamento_form.submit();
+       
+       document.getElementById("submeter").click;
     } 
  }
 

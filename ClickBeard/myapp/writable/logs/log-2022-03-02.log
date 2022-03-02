@@ -1,0 +1,19 @@
+ERROR - 2022-03-02 06:08:44 --> Column 'IDBARBEIRO' cannot be null
+ERROR - 2022-03-02 06:08:50 --> Column 'IDBARBEIRO' cannot be null
+ERROR - 2022-03-02 06:08:53 --> Column 'IDBARBEIRO' cannot be null
+ERROR - 2022-03-02 06:09:41 --> Column 'IDBARBEIRO' cannot be null
+ERROR - 2022-03-02 06:10:56 --> Column 'IDBARBEIRO' cannot be null
+ERROR - 2022-03-02 06:11:30 --> Column 'IDBARBEIRO' cannot be null
+ERROR - 2022-03-02 06:11:54 --> Column 'IDBARBEIRO' cannot be null
+ERROR - 2022-03-02 06:14:28 --> Column 'IDBARBEIRO' cannot be null
+CRITICAL - 2022-03-02 06:33:08 --> syntax error, unexpected '->' (T_OBJECT_OPERATOR), expecting identifier (T_STRING) or variable (T_VARIABLE) or '{' or '$'
+#0 /app/myapp/system/Router/Router.php(175): CodeIgniter\Router\Router->autoRoute()
+#1 /app/myapp/system/CodeIgniter.php(719): CodeIgniter\Router\Router->handle()
+#2 /app/myapp/system/CodeIgniter.php(361): CodeIgniter\CodeIgniter->tryToRouteIt()
+#3 /app/myapp/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest()
+#4 /app/myapp/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+ERROR - 2022-03-02 06:57:26 --> Duplicate entry '0' for key 'PRIMARY'
+ERROR - 2022-03-02 06:57:58 --> Duplicate entry '0' for key 'PRIMARY'
+ERROR - 2022-03-02 06:59:07 --> Duplicate entry '0' for key 'PRIMARY'
+ERROR - 2022-03-02 06:59:42 --> Duplicate entry '0' for key 'PRIMARY'

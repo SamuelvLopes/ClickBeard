@@ -1,3 +1,6 @@
+<?php 
+//var_dump($agendamentos);exit();
+?>
 <h1>Agendamentos</h1>
 <!-- Button trigger modal -->
 <button type="button" class="btn bg-gradient-success" data-bs-toggle="modal" data-bs-target="#exampleModal">
@@ -18,7 +21,8 @@
       <form name="agendamento_form" method="post" action="/agendar/agendamento">
         <div class="input-group input-group-static my-3">
           <label>Data e Hora</label>
-          <input name="horario" type="datetime-local" class="form-control" required>
+          
+          <input name="horario" min="<?=date('Y-m-d')?>T00:00" max="2030-01-01T00:00" type="datetime-local" class="form-control" required>
         </div>
         <div id='div_especialidade' class="input-group input-group-outline my-3">
          <label class="form-label">Especialidade
@@ -31,13 +35,14 @@
         </div>
         <div id="divbabeiroselect" style='display:none' class="input-group input-group-static mb-4">
           <label for="exampleFormControlSelect1" class="ms-0">Escolha seu barbeiro</label>
-          <select name='barbeiro' class="form-control" id="babeiroselect" >
+          <select name='barbeiro' class="form-control" id="babeiroselect" required>
             
           </select>
         </div> 
         <input style='display:none' name="especialidade2" id='form_especialidade2' type="text" required>
-        
-        <button type="button"  onclick="pergunta()" class="btn bg-gradient-success">Agendar</button>
+        <!-- <button type='submit' id='submeter'></button> -->
+        <!-- onclick="pergunta()" --> 
+        <button type="submit"  class="btn bg-gradient-success">Agendar</button>
       </form>
       </div>
       <div class="modal-footer">
