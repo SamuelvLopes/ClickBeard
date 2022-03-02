@@ -1,7 +1,7 @@
 # ClickBeard
 
 ## BANCO DE DADOS
-![bd](https://user-images.githubusercontent.com/51290633/156395267-8d585b75-18ec-4248-9228-256f8c5bdcae.png)
+![bd](https://user-images.githubusercontent.com/51290633/156395671-5269b544-d707-4f30-ae89-de00bda3d15f.png)
 
 ## TIPOS DE USUARIO
 
