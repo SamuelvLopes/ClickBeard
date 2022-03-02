@@ -21,10 +21,17 @@ class Home extends BaseController
 	}
     public function index()
     {
+        $session = \Config\Services::session($config);
+        $session = session();
+        if($_SESSION['TYPE']==1){
+            
 
-        $template=new Template();
-        $data=["d"];
-        $template->show("teste",  $data);
+        }else{
+            $this->agendar=new \App\Controllers\Agendar();
+            $this->agendar->index();
+        }
+        
+
         
     }
 }

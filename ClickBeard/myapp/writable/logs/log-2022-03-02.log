@@ -58,3 +58,62 @@ CRITICAL - 2022-03-02 07:59:21 --> Cannot use string offset as an object
 #2 /app/myapp/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest()
 #3 /app/myapp/public/index.php(37): CodeIgniter\CodeIgniter->run()
 #4 {main}
+CRITICAL - 2022-03-02 09:57:22 --> syntax error, unexpected '->' (T_OBJECT_OPERATOR)
+#0 /app/myapp/system/Router/Router.php(175): CodeIgniter\Router\Router->autoRoute()
+#1 /app/myapp/system/CodeIgniter.php(719): CodeIgniter\Router\Router->handle()
+#2 /app/myapp/system/CodeIgniter.php(361): CodeIgniter\CodeIgniter->tryToRouteIt()
+#3 /app/myapp/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest()
+#4 /app/myapp/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-03-02 09:57:25 --> syntax error, unexpected '->' (T_OBJECT_OPERATOR)
+#0 /app/myapp/system/Router/Router.php(175): CodeIgniter\Router\Router->autoRoute()
+#1 /app/myapp/system/CodeIgniter.php(719): CodeIgniter\Router\Router->handle()
+#2 /app/myapp/system/CodeIgniter.php(361): CodeIgniter\CodeIgniter->tryToRouteIt()
+#3 /app/myapp/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest()
+#4 /app/myapp/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-03-02 09:57:27 --> syntax error, unexpected '->' (T_OBJECT_OPERATOR)
+#0 /app/myapp/system/Router/Router.php(175): CodeIgniter\Router\Router->autoRoute()
+#1 /app/myapp/system/CodeIgniter.php(719): CodeIgniter\Router\Router->handle()
+#2 /app/myapp/system/CodeIgniter.php(361): CodeIgniter\CodeIgniter->tryToRouteIt()
+#3 /app/myapp/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest()
+#4 /app/myapp/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-03-02 09:57:46 --> Call to a member function index() on null
+#0 /app/myapp/system/CodeIgniter.php(825): App\Controllers\Login->cadastro()
+#1 /app/myapp/system/CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController()
+#2 /app/myapp/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest()
+#3 /app/myapp/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2022-03-02 09:58:15 --> Call to a member function index() on null
+#0 /app/myapp/system/CodeIgniter.php(825): App\Controllers\Login->cadastro()
+#1 /app/myapp/system/CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController()
+#2 /app/myapp/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest()
+#3 /app/myapp/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2022-03-02 09:58:33 --> Call to a member function index() on null
+#0 /app/myapp/system/CodeIgniter.php(825): App\Controllers\Login->cadastro()
+#1 /app/myapp/system/CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController()
+#2 /app/myapp/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest()
+#3 /app/myapp/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2022-03-02 09:59:10 --> Call to a member function index() on null
+#0 /app/myapp/system/CodeIgniter.php(825): App\Controllers\Login->cadastro()
+#1 /app/myapp/system/CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController()
+#2 /app/myapp/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest()
+#3 /app/myapp/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2022-03-02 10:10:47 --> Call to a member function index() on null
+#0 /app/myapp/app/Controllers/Login.php(65): App\Controllers\Login->cadastro()
+#1 /app/myapp/system/CodeIgniter.php(825): App\Controllers\Login->cadastrar()
+#2 /app/myapp/system/CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController()
+#3 /app/myapp/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest()
+#4 /app/myapp/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-03-02 10:10:53 --> Call to a member function index() on null
+#0 /app/myapp/app/Controllers/Login.php(65): App\Controllers\Login->cadastro()
+#1 /app/myapp/system/CodeIgniter.php(825): App\Controllers\Login->cadastrar()
+#2 /app/myapp/system/CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController()
+#3 /app/myapp/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest()
+#4 /app/myapp/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}

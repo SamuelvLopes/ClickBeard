@@ -57,7 +57,15 @@ class Login extends BaseController
         $session = \Config\Services::session($config);
         $session = session();
 
-
+        $this->TableUsuario=new \App\Models\Usuario();
+       
+        $usuario=$this->TableUsuario->where("EMAIL",strtoupper($_POST['EMAIL']))->findAll()[0];
+      
+        if($usuario!=null){
+            $this->cadastro();
+            exit();
+        }
+        
         $data=[
             "TYPE"=>3,
             "NOME"=>strtoupper($_POST['NOME']),
@@ -65,7 +73,7 @@ class Login extends BaseController
             "PASSWORD"=>password_hash($_POST['PASSWORD'], PASSWORD_DEFAULT)
         ];
         
-        $this->TableUsuario=new \App\Models\Usuario();
+        
         $this->TableUsuario->insert($data);
 
         $_SESSION['EMAIL']=strtoupper($_POST['EMAIL']);
