@@ -4,8 +4,8 @@
 ##### http://ec2-3-83-202-51.compute-1.amazonaws.com/
 ##### http://3.83.202.51/
 ### Login do dono
-##### dono@clickbeard.com
-##### 123
+##### Email: dono@clickbeard.com
+##### Senha: 123
 ### BANCO DE DADOS
 ![bd](https://user-images.githubusercontent.com/51290633/156395671-5269b544-d707-4f30-ae89-de00bda3d15f.png)
 ### acesse o banco de dados através do adminer na porta 8080
