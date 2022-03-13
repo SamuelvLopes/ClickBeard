@@ -14,7 +14,7 @@
 
 ## TIPOS DE USUARIO
 
-####### 1-administrador
-####### 2-barbeiro
-####### 3- usuario comum
+###### 1-administrador
+###### 2-barbeiro
+###### 3- usuario comum
 
