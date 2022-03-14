@@ -1,4 +1,4 @@
-# ClickBeard
+# ClickBeard(encerrei o servidor)
 ## https://clickbeard.pratics.org/
 ### link com certificado ssl gratuito da let's encrypt
 
